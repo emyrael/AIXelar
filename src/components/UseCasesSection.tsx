@@ -2,28 +2,28 @@ import { ArrowUpRight } from "lucide-react";
 
 const useCases = [
   {
-    title: "Customer Support Bot",
-    industry: "E-Commerce",
-    description: "Reduced support tickets by 60% with an AI chatbot handling 24/7 customer inquiries.",
-    metric: "60% fewer tickets",
+    title: "Customer Support Automation",
+    industry: "Customer Experience",
+    description: "Mid-size businesses struggle with high support volumes and response times. Our AI chatbot handles common inquiries 24/7, routes complex issues to human agents, and reduces support costs while improving customer satisfaction.",
+    metric: "60% fewer support tickets",
   },
   {
-    title: "Document Processing",
-    industry: "Legal",
-    description: "Automated contract review and data extraction, saving 100+ hours monthly.",
-    metric: "100+ hours saved",
+    title: "Automated Report Summaries",
+    industry: "Operations",
+    description: "Daily KPIs, sales reports, and alerts delivered automatically to WhatsApp, Slack, or social media chat apps. Teams stay informed without logging into multiple dashboards, enabling faster decision-making.",
+    metric: "15 hours saved weekly",
   },
   {
-    title: "Sales Intelligence",
-    industry: "SaaS",
-    description: "AI-powered lead scoring and personalized outreach automation.",
-    metric: "3x conversion rate",
+    title: "RAG Knowledge System",
+    industry: "Internal Operations",
+    description: "Employees waste hours searching for company policies, SOPs, and internal knowledge. Our RAG system makes your entire knowledge base instantly searchable, providing accurate answers to employee questions in seconds.",
+    metric: "3x faster information access",
   },
   {
-    title: "Inventory Forecasting",
-    industry: "Retail",
-    description: "Machine learning model predicting demand with 95% accuracy.",
-    metric: "95% accuracy",
+    title: "Retail Forecasting & Optimization",
+    industry: "Retail & Logistics",
+    description: "Inventory management and demand forecasting challenges lead to stockouts or overstock. AI-powered forecasting predicts demand patterns, optimizes inventory levels, and automates reorder workflows to reduce costs and improve availability.",
+    metric: "92% forecast accuracy",
   },
 ];
 

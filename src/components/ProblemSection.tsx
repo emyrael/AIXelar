@@ -3,18 +3,18 @@ import { Clock, Users, HelpCircle } from "lucide-react";
 const problems = [
   {
     icon: Clock,
-    title: "Wasting Hours on Manual Tasks",
-    description: "Your team spends countless hours on repetitive work that could be automated.",
+    title: "Losing Time & Efficiency Daily",
+    description: "Manual processes drain productivity and cost you competitive advantage. Every day without automation is lost revenue.",
   },
   {
     icon: Users,
-    title: "Your Team is Overwhelmed",
-    description: "Growing workload without the tools to scale efficiently leads to burnout.",
+    title: "Scaling Without the Right Tools",
+    description: "Your business is growing, but manual workflows can't keep up. You're losing opportunities while competitors move faster.",
   },
   {
     icon: HelpCircle,
-    title: "AI Adoption Feels Confusing",
-    description: "The AI landscape is complex. You need a guide, not more jargon.",
+    title: "AI Feels Too Complex",
+    description: "AI adoption seems overwhelming. You need practical solutions, not complexity. AIXelar bridges that gap.",
   },
 ];
 
@@ -25,10 +25,10 @@ const ProblemSection = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">The Problem</span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-            Your Business is Falling Behind
+            Your Business is Losing Competitive Edge
           </h2>
           <p className="text-lg text-muted-foreground">
-            Without AI automation, you're leaving efficiency and growth on the table.
+            Mid-size businesses without AI automation are losing time, efficiency, and market position every day.
           </p>
         </div>
 

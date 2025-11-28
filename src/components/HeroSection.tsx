@@ -25,9 +25,9 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-8 animate-fade-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-4 animate-fade-up">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-accent">AI-Powered Business Solutions</span>
+            <span className="text-sm font-medium text-accent">Accelerate With Intelligence</span>
           </div>
 
           {/* Headline */}
@@ -40,7 +40,7 @@ const HeroSection = () => {
 
           {/* Subtext */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delayed">
-            Automate workflows, build AI apps, and integrate intelligent systems—delivered in 7–21 days.
+          AIXelar designs, builds, and integrates intelligent systems that automate workflows, enhance customer experience, and unlock new levels of operational efficiency. We combine automation, data intelligence, and AI-driven strategy to help companies scale without complexity.
           </p>
 
           {/* CTA Buttons */}

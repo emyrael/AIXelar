@@ -2,29 +2,29 @@ import { Zap, Code2, Shield, Headphones, CheckCircle } from "lucide-react";
 
 const reasons = [
   {
-    icon: Zap,
-    title: "Fast Delivery (7–21 Days)",
-    description: "Rapid development cycles mean you see results in weeks, not months.",
+    icon: Code2,
+    title: "Custom-Built AI Solutions",
+    description: "Intelligent automation, AI agents, workflow systems, and optimisation tools engineered specifically for your business, no off-the-shelf templates.",
   },
   {
-    icon: Code2,
-    title: "Custom-Built, No Templates",
-    description: "Every solution is tailored to your specific business requirements.",
+    icon: Zap,
+    title: "Fast Delivery",
+    description: "Average delivery of 14 days depending on project specification. Rapid deployment without compromising quality or security.",
   },
   {
     icon: CheckCircle,
-    title: "Deep AI Expertise",
-    description: "Years of experience building production-grade AI systems.",
+    title: "Enterprise-Grade Engineering",
+    description: "Deep technical expertise from Top Tech Companies like Accenture, Invisible Technologies and Airbus. Production-ready AI systems built with industry best practices.",
   },
   {
     icon: Shield,
-    title: "Secure Cloud Deployments",
-    description: "Enterprise-grade security with compliant cloud infrastructure.",
+    title: "Secure Cloud Architecture",
+    description: "Enterprise-grade security with compliant cloud deployments. Your data and systems protected with industry-standard protocols.",
   },
   {
     icon: Headphones,
-    title: "Ongoing Support",
-    description: "Continuous maintenance and optimization post-launch.",
+    title: "Strategic AI Consulting",
+    description: "Beyond implementation we deliver strategic guidance on automation, competitor analysis, website optimisation, and process optimisation.",
   },
 ];
 
@@ -38,10 +38,10 @@ const WhyUsSection = () => {
             <div>
               <span className="text-accent font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-                Your Competitive Edge in AI
+                Enterprise AI Solutions Built for Scale
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                We don't just build AI—we build AI that works for your specific business context and scales with your growth.
+                AIXelar delivers intelligent automation, AI agents, workflow systems, and optimisation tools that transform how your business operates. We build custom AI solutions from customer support automation and predictive analytics to competitor analysis and data engineering designed to integrate seamlessly with your infrastructure.
               </p>
               
               <div className="space-y-4">
@@ -65,7 +65,7 @@ const WhyUsSection = () => {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-6 h-full">
                   <div className="flex flex-col justify-center items-center p-6 rounded-2xl bg-card border border-border/50">
-                    <span className="text-4xl font-bold text-accent">50+</span>
+                    <span className="text-4xl font-bold text-accent">20+</span>
                     <span className="text-sm text-muted-foreground mt-2">Projects Delivered</span>
                   </div>
                   <div className="flex flex-col justify-center items-center p-6 rounded-2xl bg-card border border-border/50">

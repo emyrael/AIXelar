@@ -2,27 +2,39 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "CEO, TechStart Inc.",
-    content: "AIXelar transformed our customer service. The AI chatbot they built handles 70% of inquiries automatically. ROI was visible within the first month.",
+    name: "Marcus Thompson",
+    role: "Owner, Thompson's Auto Repair",
+    content: "The AI chatbot AIXelar built for our shop handles customer inquiries after hours. We're getting bookings even when we're closed. Game changer for a small business like ours.",
     rating: 5,
   },
   {
-    name: "Michael Rodriguez",
-    role: "Operations Director, LogiFlow",
-    content: "The process automation they implemented saved our team 40 hours per week. Their expertise in AI engineering is unmatched.",
+    name: "Priya Patel",
+    role: "Founder, GreenLeaf Organics",
+    content: "Their automation system streamlined our inventory management. We went from spending hours on spreadsheets to everything updating automatically. Very happy with the results.",
+    rating: 4,
+  },
+  {
+    name: "James Wilson",
+    role: "Manager, Wilson & Sons Plumbing",
+    content: "The AIXelar team understood our needs quickly and delivered a solution that helps us schedule jobs more efficiently. Response time was great, and the system works exactly as promised.",
     rating: 5,
   },
   {
-    name: "Emily Watson",
-    role: "Founder, DataDriven Co.",
-    content: "Fast delivery, excellent communication, and a product that exceeded expectations. They truly understand business AI applications.",
-    rating: 5,
+    name: "Lisa Martinez",
+    role: "Owner, Martinez Bakery",
+    content: "We're a small family business, and AIXelar made AI feel accessible. The email automation they set up saves us hours each week. Would definitely recommend to other small businesses.",
+    rating: 4,
   },
   {
-    name: "David Park",
-    role: "CTO, ScaleUp Solutions",
-    content: "Working with AIXelar felt like having an in-house AI team. They delivered a complex RAG system in just two weeks.",
+    name: "Robert Kim",
+    role: "Director, Kim's Accounting Services",
+    content: "The document processing AI they built for us has been a huge time saver during tax season. It's not perfect, but it handles about 80% of the routine work, which is exactly what we needed.",
+    rating: 4,
+  },
+  {
+    name: "Amanda Foster",
+    role: "Owner, Foster's Pet Care",
+    content: "AIXelar created a simple booking system with AI that helps us manage appointments and send reminders. Our customers love it, and we love the time it saves us. Great value for the price.",
     rating: 5,
   },
 ];
@@ -41,7 +53,7 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}

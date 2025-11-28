@@ -3,40 +3,58 @@ import {
   Brain, 
   Workflow, 
   BarChart3, 
-  Mail, 
-  FileCheck 
+  Plug,
+  Headphones,
+  TrendingUp,
+  Globe,
+  Search
 } from "lucide-react";
 
 const solutions = [
   {
     icon: MessageSquare,
     title: "AI Chatbots & Assistants",
-    description: "Custom conversational AI that understands your business and serves your customers 24/7.",
+    description: "Intelligent conversational AI that handles customer inquiries, reduces support costs, and improves response times. Deploy 24/7 customer service that scales with your business.",
+  },
+  {
+    icon: Headphones,
+    title: "AI Customer Support Automation",
+    description: "End-to-end customer support automation that routes inquiries, resolves common issues, and escalates complex cases. Reduce support costs while improving customer satisfaction.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Sales & CRM Automation",
+    description: "Intelligent sales automation that qualifies leads, nurtures prospects, and optimizes your sales pipeline. Increase conversion rates and accelerate revenue growth.",
   },
   {
     icon: Brain,
     title: "RAG Knowledge Systems",
-    description: "Intelligent document retrieval systems that make your company knowledge instantly accessible.",
+    description: "Enterprise knowledge management systems that make your company's data instantly searchable and accessible. Empower teams with intelligent document retrieval and insights.",
   },
   {
     icon: Workflow,
     title: "Process Automation",
-    description: "End-to-end workflow automation that eliminates manual bottlenecks and scales with you.",
+    description: "End-to-end workflow automation that eliminates manual tasks, reduces operational costs, and increases productivity. Streamline operations from data entry to complex business processes.",
+  },
+  {
+    icon: Globe,
+    title: "AI Website Optimization",
+    description: "Conversion rate optimization and personalization powered by AI. Improve user experience, increase engagement, and boost conversion rates through intelligent website personalization.",
   },
   {
     icon: BarChart3,
-    title: "AI Dashboards & Pipelines",
-    description: "Real-time data intelligence dashboards powered by machine learning insights.",
+    title: "AI Forecasting & Business Intelligence",
+    description: "Predictive analytics and business intelligence dashboards that transform data into actionable insights. Make data-driven decisions with AI-powered forecasting and real-time analytics.",
   },
   {
-    icon: Mail,
-    title: "Email → App Sync",
-    description: "Seamless integrations that connect your email workflows to your core applications.",
+    icon: Plug,
+    title: "System Integration & Automation",
+    description: "Seamless integration of your existing systems with intelligent automation. Connect CRM, ERP, and third-party applications to create unified, automated workflows.",
   },
   {
-    icon: FileCheck,
-    title: "Document Verification AI",
-    description: "Automated document processing and verification with high accuracy and compliance.",
+    icon: Search,
+    title: "Competitor Analysis & Market Intelligence",
+    description: "AI-powered competitor analysis that tracks market trends, monitors competitor strategies, and identifies opportunities. Stay ahead of market changes with intelligent competitive intelligence.",
   },
 ];
 
@@ -47,10 +65,10 @@ const SolutionsSection = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Solutions</span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-            AI Solutions That Drive Results
+            Enterprise AI Solutions for Mid-Size Businesses
           </h2>
           <p className="text-lg text-muted-foreground">
-            Custom-built AI solutions designed specifically for your business needs.
+            Comprehensive AI solutions designed to drive productivity, reduce costs, and accelerate growth for mid-size businesses.
           </p>
         </div>
 

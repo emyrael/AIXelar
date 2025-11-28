@@ -123,8 +123,8 @@ const Footer = () => {
           <p className="text-sm text-primary-foreground/40">
             © {new Date().getFullYear()} AIXelar. All rights reserved.
           </p>
-          <p className="text-sm text-primary-foreground/40">
-            Built with AI, for AI-powered businesses.
+          <p className="text-sm text-primary-foreground/40 font-medium">
+            Accelerate With Intelligence
           </p>
         </div>
       </div>
