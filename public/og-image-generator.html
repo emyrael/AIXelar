@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image Generator - Convert to PNG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        #canvas {
+            border: 1px solid #ddd;
+            display: block;
+            margin: 20px auto;
+        }
+        .instructions {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AIXelar OG Image Generator</h1>
+        <div class="instructions">
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>Right-click on the image below</li>
+                <li>Select "Save image as..." or "Copy image"</li>
+                <li>Save as <code>og-image.png</code> in the <code>public</code> folder</li>
+                <li>Update <code>index.html</code> to use <code>og-image.png</code> instead of <code>og-image.svg</code></li>
+            </ol>
+        </div>
+        <canvas id="canvas" width="1200" height="630"></canvas>
+    </div>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Background gradient (navy blue)
+        const bgGradient = ctx.createLinearGradient(0, 0, 1200, 630);
+        bgGradient.addColorStop(0, '#16213E');
+        bgGradient.addColorStop(0.5, '#1E3A5F');
+        bgGradient.addColorStop(1, '#16213E');
+        ctx.fillStyle = bgGradient;
+        ctx.fillRect(0, 0, 1200, 630);
+        
+        // Accent gradient (teal)
+        const accentGradient = ctx.createLinearGradient(0, 0, 180, 180);
+        accentGradient.addColorStop(0, '#0EA5E9');
+        accentGradient.addColorStop(1, '#14B8A6');
+        
+        // Decorative circles
+        ctx.fillStyle = 'rgba(14, 165, 233, 0.08)';
+        ctx.beginPath();
+        ctx.arc(150, 120, 100, 0, Math.PI * 2);
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.arc(1050, 510, 120, 0, Math.PI * 2);
+        ctx.fill();
+        
+        ctx.fillStyle = 'rgba(14, 165, 233, 0.05)';
+        ctx.beginPath();
+        ctx.arc(600, 100, 60, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Main logo circle
+        ctx.fillStyle = accentGradient;
+        ctx.beginPath();
+        ctx.arc(600, 180, 90, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // AX text in logo
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 80px system-ui, -apple-system, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('AX', 600, 180);
+        
+        // Company name
+        ctx.font = 'bold 78px system-ui, -apple-system, sans-serif';
+        ctx.fillStyle = 'white';
+        ctx.fillText('AI', 600, 340);
+        ctx.fillStyle = '#14B8A6';
+        ctx.fillText('Xelar', 600 + ctx.measureText('AI').width, 340);
+        
+        // Slogan
+        ctx.font = '600 36px system-ui, -apple-system, sans-serif';
+        ctx.fillStyle = '#E2E8F0';
+        ctx.fillText('Accelerate With Intelligence', 600, 400);
+        
+        // Tagline
+        ctx.font = '400 26px system-ui, -apple-system, sans-serif';
+        ctx.fillStyle = '#94A3B8';
+        ctx.fillText('Custom AI Solutions & Automation for Your Business', 600, 460);
+        
+        // Domain
+        ctx.font = '500 20px system-ui, -apple-system, sans-serif';
+        ctx.fillStyle = '#64748B';
+        ctx.fillText('aixelar.io', 600, 520);
+    </script>
+</body>
+</html>
+
