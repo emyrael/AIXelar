@@ -50,7 +50,7 @@ const SolutionsSection = () => {
             AI Solutions That Drive Results
           </h2>
           <p className="text-lg text-muted-foreground">
-            Custom-built AI applications designed specifically for your business needs.
+            Custom-built AI solutions designed specifically for your business needs.
           </p>
         </div>
 

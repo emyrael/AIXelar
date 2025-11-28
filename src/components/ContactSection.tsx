@@ -15,8 +15,15 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData);
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`AI Solution Inquiry from ${formData.fullName}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.fullName}\n` +
+      `Company: ${formData.companyName}\n` +
+      `Email: ${formData.email}\n\n` +
+      `Project Description:\n${formData.description}`
+    );
+    window.location.href = `mailto:info@aixelar.io?subject=${subject}&body=${body}`;
     setIsSubmitted(true);
   };
 
@@ -61,6 +68,12 @@ const ContactSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground">
             Tell us about your project and we'll get back to you with a custom proposal.
+          </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            Or email us directly at{" "}
+            <a href="mailto:info@aixelar.io" className="text-accent hover:underline">
+              info@aixelar.io
+            </a>
           </p>
         </div>
 

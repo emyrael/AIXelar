@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,11 +18,31 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (hash: string) => {
+    if (isHomePage) {
+      // On home page, just scroll to section
+      const element = document.querySelector(hash);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      // On other pages, navigate to home with hash
+      window.location.href = `/${hash}`;
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   const navLinks = [
-    { name: "Solutions", href: "#solutions" },
-    { name: "Process", href: "#process" },
-    { name: "Contact", href: "#contact" },
-    { name: "About", href: "#about" },
+    { name: "Solutions", hash: "#solutions" },
+    { name: "Process", hash: "#process" },
+    { name: "Contact", hash: "#contact" },
+    { name: "About", hash: "#about" },
   ];
 
   return (
@@ -28,23 +52,23 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold">
+        <Link to="/" className="text-2xl font-bold">
           <span className="text-foreground">AI</span><span className="text-accent">Xelar</span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.name}
-              href={link.href}
+              onClick={() => handleNavClick(link.hash)}
               className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
             >
               {link.name}
-            </a>
+            </button>
           ))}
-          <Button variant="hero" size="default" asChild>
-            <a href="#contact">Book a Call</a>
+          <Button variant="hero" size="default" onClick={() => handleNavClick("#contact")}>
+            Book a Call
           </Button>
         </div>
 
@@ -62,17 +86,16 @@ const Navbar = () => {
         <div className="md:hidden glass mt-2 mx-4 rounded-xl p-6 animate-fade-up">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.name}
-                href={link.href}
-                className="text-foreground hover:text-accent transition-colors py-2 text-lg font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => handleNavClick(link.hash)}
+                className="text-foreground hover:text-accent transition-colors py-2 text-lg font-medium text-left"
               >
                 {link.name}
-              </a>
+              </button>
             ))}
-            <Button variant="hero" size="lg" className="mt-4" asChild>
-              <a href="#contact">Book a Call</a>
+            <Button variant="hero" size="lg" className="mt-4" onClick={() => handleNavClick("#contact")}>
+              Book a Call
             </Button>
           </div>
         </div>

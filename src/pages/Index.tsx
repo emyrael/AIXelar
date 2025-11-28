@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -13,9 +14,11 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const location = useLocation();
+
   useEffect(() => {
     // Handle hash navigation on page load
-    const hash = window.location.hash;
+    const hash = location.hash || window.location.hash;
     if (hash) {
       setTimeout(() => {
         const element = document.querySelector(hash);
@@ -30,7 +33,7 @@ const Index = () => {
         }
       }, 100);
     }
-  }, []);
+  }, [location]);
 
   return (
     <main className="min-h-screen bg-background">
