@@ -46,7 +46,7 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delayed">
             <Button variant="hero" size="lg" className="group" asChild>
-              <a href="#contact">
+              <a href="https://calendly.com/emyraeleson/30min" target="_blank" rel="noopener noreferrer">
                 Book a Consultation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>

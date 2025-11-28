@@ -72,8 +72,8 @@ const Navbar = () => {
               {link.name}
             </button>
           ))}
-          <Button variant="hero" size="default" onClick={() => handleNavClick("#contact")}>
-            Book a Call
+          <Button variant="hero" size="default" asChild>
+            <a href="https://calendly.com/emyraeleson/30min" target="_blank" rel="noopener noreferrer">Book a Call</a>
           </Button>
         </div>
 
@@ -99,8 +99,8 @@ const Navbar = () => {
                 {link.name}
               </button>
             ))}
-            <Button variant="hero" size="lg" className="mt-4" onClick={() => handleNavClick("#contact")}>
-              Book a Call
+            <Button variant="hero" size="lg" className="mt-4" asChild>
+              <a href="https://calendly.com/emyraeleson/30min" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </Button>
           </div>
         </div>
