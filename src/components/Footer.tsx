@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com/in/Emmanuel-Onwubuya"
+                // href="https://linkedin.com/in/Emmanuel-Onwubuya"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
