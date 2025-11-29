@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
             What Our Clients Say
           </h2>
           <p className="text-lg text-muted-foreground">
-            Don't just take our word for it—hear from businesses we've helped transform.
+            Don't just take our word for it hear from businesses we've helped transform.
           </p>
         </div>
 
