@@ -4,7 +4,7 @@ const useCases = [
   {
     title: "Customer Support Automation",
     industry: "Customer Experience",
-    description: "Mid-size businesses struggle with high support volumes and response times. Our AI chatbot handles common inquiries 24/7, routes complex issues to human agents, and reduces support costs while improving customer satisfaction.",
+    description: "Different businesses struggle with high support volumes and response times. Our AI chatbot handles common inquiries 24/7, routes complex issues to human agents, and reduces support costs while improving customer satisfaction.",
     metric: "60% fewer support tickets",
   },
   {

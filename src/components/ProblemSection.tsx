@@ -28,7 +28,7 @@ const ProblemSection = () => {
             Your Business is Losing Competitive Edge
           </h2>
           <p className="text-lg text-muted-foreground">
-            Mid-size businesses without AI automation are losing time, efficiency, and market position every day.
+            Businesses of all different sizes without AI automation are losing time, efficiency, and market position every day.
           </p>
         </div>
 

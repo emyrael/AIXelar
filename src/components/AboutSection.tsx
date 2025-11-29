@@ -21,7 +21,7 @@ const AboutSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Meet the Founder</span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-            Emmanuel Onwubuya
+            Emmanuel
           </h2>
           <p className="text-xl text-accent font-medium mb-6">
             Data Engineer & AI Solutions Architect

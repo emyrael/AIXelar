@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -5,6 +6,14 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 const TermsOfService = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />

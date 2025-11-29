@@ -38,11 +38,37 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navLinks = [
+  const handleHomeClick = () => {
+    if (isHomePage) {
+      // Already on home page, scroll to top
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      // Navigate to home page
+      navigate("/");
+      // Scroll to top after navigation
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }, 100);
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  type NavLink = 
+    | { name: string; hash: string; path?: never }
+    | { name: string; path: string; hash?: never };
+
+  const navLinks: NavLink[] = [
+    { name: "Home", path: "/" },
     { name: "Solutions", hash: "#solutions" },
     { name: "Process", hash: "#process" },
     { name: "Contact", hash: "#contact" },
-    { name: "About", hash: "#about" },
+    { name: "About", path: "/about" },
   ];
 
   return (
@@ -64,13 +90,31 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <button
-              key={link.name}
-              onClick={() => handleNavClick(link.hash)}
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
-            >
-              {link.name}
-            </button>
+            link.name === "Home" ? (
+              <button
+                key={link.name}
+                onClick={handleHomeClick}
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
+              >
+                {link.name}
+              </button>
+            ) : link.path ? (
+              <Link
+                key={link.name}
+                to={link.path}
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
+              >
+                {link.name}
+              </Link>
+            ) : (
+              <button
+                key={link.name}
+                onClick={() => handleNavClick(link.hash!)}
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
+              >
+                {link.name}
+              </button>
+            )
           ))}
           <Button variant="hero" size="default" asChild>
             <a href="https://calendly.com/emyraeleson/30min" target="_blank" rel="noopener noreferrer">Book a Call</a>
@@ -91,13 +135,32 @@ const Navbar = () => {
         <div className="md:hidden glass mt-2 mx-4 rounded-xl p-6 animate-fade-up">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <button
-                key={link.name}
-                onClick={() => handleNavClick(link.hash)}
-                className="text-foreground hover:text-accent transition-colors py-2 text-lg font-medium text-left"
-              >
-                {link.name}
-              </button>
+              link.name === "Home" ? (
+                <button
+                  key={link.name}
+                  onClick={handleHomeClick}
+                  className="text-foreground hover:text-accent transition-colors py-2 text-lg font-medium text-left"
+                >
+                  {link.name}
+                </button>
+              ) : link.path ? (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-foreground hover:text-accent transition-colors py-2 text-lg font-medium text-left"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <button
+                  key={link.name}
+                  onClick={() => handleNavClick(link.hash!)}
+                  className="text-foreground hover:text-accent transition-colors py-2 text-lg font-medium text-left"
+                >
+                  {link.name}
+                </button>
+              )
             ))}
             <Button variant="hero" size="lg" className="mt-4" asChild>
               <a href="https://calendly.com/emyraeleson/30min" target="_blank" rel="noopener noreferrer">Book a Call</a>

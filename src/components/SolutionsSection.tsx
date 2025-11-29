@@ -65,7 +65,8 @@ const SolutionsSection = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Solutions</span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-            Enterprise AI Solutions for Mid-Size Businesses
+            Enterprise AI Solutions for Businesses of all 
+            Sizes
           </h2>
           <p className="text-lg text-muted-foreground">
             Comprehensive AI solutions designed to drive productivity, reduce costs, and accelerate growth for mid-size businesses.

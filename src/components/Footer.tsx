@@ -1,23 +1,60 @@
 import { Linkedin, Twitter, Github, Mail } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/";
+
+  const handleCompanyClick = (hash: string) => {
+    if (hash === "#about") {
+      // Navigate to About page
+      navigate("/about");
+    } else if (isHomePage) {
+      // On home page, scroll to section
+      const element = document.querySelector(hash);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      // On other pages, navigate to home with hash
+      navigate(`/${hash}`);
+    }
+  };
+
+  const handleLegalClick = (path: string) => {
+    navigate(path);
+    // Scroll to top after navigation
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 100);
+  };
+
   const footerLinks = {
     services: [
-      { name: "AI Chatbots", href: "#" },
-      { name: "RAG Systems", href: "#" },
-      { name: "Process Automation", href: "#" },
-      { name: "AI Dashboards", href: "#" },
+      { name: "AI Chatbots" },
+      { name: "RAG Systems" },
+      { name: "Process Automation" },
+      { name: "AI Dashboards" },
     ],
     company: [
-      { name: "About", href: "#about" },
-      { name: "Contact", href: "#contact" },
-      { name: "Process", href: "#process" },
+      { name: "About", hash: "#about" },
+      { name: "Contact", hash: "#contact" },
+      { name: "Process", hash: "#process" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "/privacy-policy" },
-      { name: "Terms of Service", href: "/terms-of-service" },
-      { name: "Cookie Policy", href: "/cookie-policy" },
+      { name: "Privacy Policy", path: "/privacy-policy" },
+      { name: "Terms of Service", path: "/terms-of-service" },
+      { name: "Cookie Policy", path: "/cookie-policy" },
     ],
   };
 
@@ -72,12 +109,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-primary-foreground/60 hover:text-accent transition-colors"
-                  >
+                  <span className="text-sm text-primary-foreground/60">
                     {link.name}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -89,12 +123,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-primary-foreground/60 hover:text-accent transition-colors"
+                  <button
+                    onClick={() => handleCompanyClick(link.hash)}
+                    className="text-sm text-primary-foreground/60 hover:text-accent transition-colors text-left"
                   >
                     {link.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -106,12 +140,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/60 hover:text-accent transition-colors"
+                  <button
+                    onClick={() => handleLegalClick(link.path)}
+                    className="text-sm text-primary-foreground/60 hover:text-accent transition-colors text-left"
                   >
                     {link.name}
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>

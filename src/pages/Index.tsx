@@ -4,12 +4,12 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionsSection from "@/components/SolutionsSection";
+import TechToolsSlider from "@/components/TechToolsSlider";
 import ProcessSection from "@/components/ProcessSection";
 import UseCasesSection from "@/components/UseCasesSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import ContactSection from "@/components/ContactSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import AboutSection from "@/components/AboutSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -32,6 +32,12 @@ const Index = () => {
           });
         }
       }, 100);
+    } else {
+      // If no hash, scroll to top when navigating to home page
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
   }, [location]);
 
@@ -41,11 +47,11 @@ const Index = () => {
       <HeroSection />
       <ProblemSection />
       <SolutionsSection />
+      <TechToolsSlider />
       <ProcessSection />
       <UseCasesSection />
       <WhyUsSection />
       <ContactSection />
-      <AboutSection />
       <TestimonialsSection />
       <CTASection />
       <Footer />

@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, Loader2, AlertCircle } from "lucide-react";
 
 const ContactSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     fullName: "",
     companyName: "",
@@ -13,18 +15,47 @@ const ContactSection = () => {
     description: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`AI Solution Inquiry from ${formData.fullName}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.fullName}\n` +
-      `Company: ${formData.companyName}\n` +
-      `Email: ${formData.email}\n\n` +
-      `Project Description:\n${formData.description}`
-    );
-    window.location.href = `mailto:info@aixelar.io?subject=${subject}&body=${body}`;
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      // Formspree endpoint for sending emails to info@aixelar.io
+      const response = await fetch("https://formspree.io/f/mldyqdkl", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.fullName,
+          company: formData.companyName,
+          email: formData.email,
+          message: formData.description,
+          _subject: `AI Solution Inquiry from ${formData.fullName}`,
+          _to: "info@aixelar.io",
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        // Reset form
+        setFormData({
+          fullName: "",
+          companyName: "",
+          email: "",
+          description: "",
+        });
+      } else {
+        const data = await response.json();
+        throw new Error(data.error || "Failed to send message. Please try again.");
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again or email us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -154,14 +185,34 @@ const ContactSection = () => {
               />
             </div>
 
+            {error && (
+              <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20 flex items-start gap-3">
+                <AlertCircle className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-sm font-medium text-destructive mb-1">Error</p>
+                  <p className="text-sm text-destructive/80">{error}</p>
+                </div>
+              </div>
+            )}
+
             <Button
               type="submit"
               variant="hero"
               size="lg"
               className="w-full group"
+              disabled={isSubmitting}
             >
-              Send Message
-              <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  Sending...
+                </>
+              ) : (
+                <>
+                  Send Message
+                  <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </>
+              )}
             </Button>
           </form>
 
