@@ -169,12 +169,13 @@ const ChatWidget = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const generateResponse = async (userMessage: string): Promise<string> => {
+  const generateResponse = async (userMessage: string, currentMessages: Message[]): Promise<string> => {
     // If knowledge base is loaded and OpenAI is configured, use AI
     if (knowledgeBase) {
       try {
         const kbContent = await loadKnowledgeBase();
-        const conversationHistory = messages
+        // Use the passed currentMessages which includes the latest user message
+        const conversationHistory = currentMessages
           .slice(-8) // Last 8 messages for better context and memory
           .map((msg) => ({
             role: (msg.sender === "user" ? "user" : "assistant") as "user" | "assistant",
@@ -279,15 +280,18 @@ const ChatWidget = () => {
       timestamp: new Date(),
     };
 
-    setMessages((prev) => [...prev, userMessage]);
+    // Create updated messages array with the new user message
+    const updatedMessages = [...messages, userMessage];
+    setMessages(updatedMessages);
+    
     const currentInput = input;
     setInput("");
     setIsTyping(true);
     setError(null);
 
     try {
-      // Generate AI response
-      const response = await generateResponse(currentInput);
+      // Generate AI response with updated messages that include the latest user message
+      const response = await generateResponse(currentInput, updatedMessages);
       
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
