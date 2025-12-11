@@ -185,7 +185,7 @@ const About = () => {
                   simple, impactful, and accessible for businesses of all sizes.
                 </p>
                 <p className="text-foreground font-medium">
-                  Passionate about real-world solutions, not hype.
+                  Passionate about real-world solutions.
                 </p>
               </div>
 

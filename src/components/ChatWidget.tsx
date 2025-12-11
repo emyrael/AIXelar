@@ -97,29 +97,26 @@ const ChatWidget = () => {
   const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Format message text to remove AI-generated formatting
+  // Format message text to remove AI-generated formatting while preserving line breaks
   const formatMessageText = (text: string): string => {
     return text
       // Remove Calendly links
       .replace(new RegExp(CALENDLY_LINK.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), '')
       .replace(/\[SCHEDULE_CALL_BUTTON\]/g, '')
       .replace(/https:\/\/calendly\.com\/[^\s]+/g, '')
-      // Remove bullet points and dashes at start of lines
-      .replace(/^[\s]*[-•*]\s+/gm, '')
-      // Remove numbered lists formatting
-      .replace(/^\d+\.\s+/gm, '')
-      // Remove markdown formatting
+      // Remove markdown formatting but preserve line breaks
       .replace(/\*\*(.*?)\*\*/g, '$1') // Bold
       .replace(/\*(.*?)\*/g, '$1') // Italic
       .replace(/`(.*?)`/g, '$1') // Code
-      // Clean up multiple spaces
-      .replace(/\s{2,}/g, ' ')
-      // Clean up multiple newlines
+      // Clean up excessive spaces (but preserve line breaks)
+      .replace(/[ \t]+/g, ' ') // Multiple spaces/tabs to single space (within lines)
+      // Clean up excessive newlines (more than 2 consecutive become 2)
       .replace(/\n{3,}/g, '\n\n')
-      // Trim each line
+      // Trim each line but preserve line breaks
       .split('\n')
       .map(line => line.trim())
-      .join('\n')
+      .filter(line => line.length > 0) // Remove empty lines
+      .join('\n\n') // Add double line breaks between paragraphs for readability
       .trim();
   };
 
@@ -336,7 +333,7 @@ const ChatWidget = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              Try our AI Assistant
+              Chat with AIXelar Assistant
             </p>
           </div>
           {/* Chat Button */}
@@ -384,7 +381,7 @@ const ChatWidget = () => {
                       : "bg-secondary text-foreground"
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">
+                  <p className="text-sm whitespace-pre-wrap break-words">
                     {formatMessageText(message.text)}
                   </p>
                   {/* Show button only if AI explicitly includes [SCHEDULE_CALL_BUTTON] in response (after user says yes) */}

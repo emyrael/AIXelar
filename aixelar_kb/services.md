@@ -64,7 +64,7 @@ These assistants integrate with:
 - Pinecone
 - Company documents
 - Knowledge bases
-- WhatsApp, Slack, Teams, Email tools
+- WhatsApp, Telegram, Slack, Teams, Email tools
 
 ---
 

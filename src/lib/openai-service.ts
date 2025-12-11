@@ -105,8 +105,10 @@ CONVERSATION MEMORY:
 - BUT: If user changes topic (e.g., from inventory to competitor analysis), respond to the NEW topic, not the old one
 
 RESPONSE STYLE:
-- Keep responses SHORT and engaging (2-4 sentences max)
+- Keep responses CONCISE and engaging (2-3 sentences max, aim for 50-100 words)
 - Be conversational and friendly, not robotic
+- Use line breaks (\n) to separate key points for better readability
+- Break up longer explanations into short paragraphs with line breaks
 - Adapt your response style to match how the user asked:
   * If they asked a direct question → Give a direct answer
   * If they made a statement → Acknowledge and provide relevant solutions
@@ -318,7 +320,7 @@ export const getAIResponse = async (
             ...messages,
           ],
           temperature: 0.7, // Balanced temperature for natural but focused responses
-          max_tokens: 500, // Increased for better reasoning and adaptability to different question types
+          max_tokens: 250, // Reduced for concise, focused responses while maintaining context
         }),
       });
 
