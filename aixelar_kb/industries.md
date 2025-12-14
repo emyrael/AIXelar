@@ -1,7 +1,7 @@
 # Industries
-# Industries AIXelar Serves
+# Industries Xelar Serves
 
-AIXelar specializes in delivering automation and AI solutions for small and mid-sized companies.  
+Xelar specializes in delivering automation and AI solutions for small and mid-sized companies.  
 Here are the primary industries we support:
 
 ---
@@ -117,6 +117,6 @@ Solutions:
 
 ---
 
-AIXelar adapts solutions to each industry’s tools and workflows.
+Xelar adapts solutions to each industry's tools and workflows.
 
 ...

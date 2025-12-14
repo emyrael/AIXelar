@@ -1,7 +1,7 @@
 # Services
-# AIXelar Services
+# Xelar Services
 
-AIXelar offers four core categories of services designed for SMEs:
+Xelar offers four core categories of services designed for SMEs:
 
 ---
 
@@ -133,4 +133,4 @@ We optimize your digital presence using AI:
 ---
 
 # Summary
-AIXelar provides end-to-end AI and automation services—from strategy and design to implementation and optimization, including competitor analysis, market intelligence, and digital optimization.
+Xelar provides end-to-end AI and automation services—from strategy and design to implementation and optimization, including competitor analysis, market intelligence, and digital optimization.

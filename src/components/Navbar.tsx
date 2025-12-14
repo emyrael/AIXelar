@@ -80,7 +80,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex flex-col">
           <span className="text-2xl font-bold">
-            <span className="text-foreground">AI</span><span className="text-accent">Xelar</span>
+            <span className="text-accent">Xelar</span>
           </span>
           {isScrolled && (
             <span className="text-xs text-muted-foreground font-medium mt-0.5">Accelerate With Intelligence</span>

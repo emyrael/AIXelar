@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-muted-foreground mb-8">
-              AIXelar ("AIXelar", "we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit aixelar.io, use our contact form, or engage with our AI consulting services.
+              Xelar ("Xelar", "we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit aixelar.io, use our contact form, or engage with our AI consulting services.
             </p>
 
             <div className="space-y-8">

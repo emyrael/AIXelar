@@ -16,7 +16,7 @@
   - `industries.md` - Six target industries with solutions
   - `workflows.md` - Five example automation workflows
   - `faq.md` - Comprehensive FAQ (209 lines)
-  - `engagement_model.md` - How AIXelar works with clients
+  - `engagement_model.md` - How Xelar works with clients
 
 ### 3. Configuration
 Your `.env` file is configured for **development mode** with direct OpenAI API calls:
@@ -56,7 +56,7 @@ Using **gpt-4o-mini**:
 1. **Start dev server:** `npm run dev`
 2. **Open website:** http://localhost:3001 (or whatever port)
 3. **Click chat widget** → Try these questions:
-   - "What does AIXelar do?"
+   - "What does Xelar do?"
    - "I run a car dealership, can you help?"
    - "How much do you charge?"
    - "What's your timeline for building a chatbot?"

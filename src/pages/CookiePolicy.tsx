@@ -29,7 +29,7 @@ const CookiePolicy = () => {
               Cookie Policy
             </h1>
             <p className="text-muted-foreground mb-8">
-              This Cookie Policy explains how AIXelar uses cookies and similar tracking technologies on aixelar.io.
+              This Cookie Policy explains how Xelar uses cookies and similar tracking technologies on aixelar.io.
             </p>
 
             <div className="space-y-8">

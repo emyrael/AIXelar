@@ -5,7 +5,7 @@ The contact form is now configured to send emails directly to **info@aixelar.io*
 ## Option 1: Using Formspree (Recommended - Easiest)
 
 1. **Sign up for Formspree**: Go to https://formspree.io and create a free account
-2. **Create a new form**: Click "New Form" and name it "AIXelar Contact"
+2. **Create a new form**: Click "New Form" and name it "Xelar Contact"
 3. **Set email recipient**: Enter `info@aixelar.io` as the email address
 4. **Get your form ID**: Copy the form endpoint (e.g., `https://formspree.io/f/xjvqkxyz`)
 5. **Update the code**: In `src/components/ContactSection.tsx`, replace `YOUR_FORM_ID` with your form ID from step 4

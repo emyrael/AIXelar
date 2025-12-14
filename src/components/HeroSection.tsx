@@ -40,7 +40,7 @@ const HeroSection = () => {
 
           {/* Subtext */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up-delayed">
-          AIXelar designs, builds, and integrates intelligent systems that automate workflows, enhance customer experience, and unlock new levels of operational efficiency. We combine automation, data intelligence, and AI-driven strategy to help companies scale without complexity.
+          Xelar designs, builds, and integrates intelligent systems that automate workflows, enhance customer experience, and unlock new levels of operational efficiency. We combine automation, data intelligence, and AI-driven strategy to help companies scale without complexity.
           </p>
 
           {/* CTA Buttons */}

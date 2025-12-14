@@ -14,7 +14,7 @@ const problems = [
   {
     icon: HelpCircle,
     title: "AI Feels Too Complex",
-    description: "AI adoption seems overwhelming. You need practical solutions, not complexity. AIXelar bridges that gap.",
+    description: "AI adoption seems overwhelming. You need practical solutions, not complexity. Xelar bridges that gap.",
   },
 ];
 

@@ -1,4 +1,4 @@
-# Vercel Deployment Guide for AIXelar
+# Vercel Deployment Guide for Xelar
 
 ## ✅ Important: DO NOT Commit .env File
 

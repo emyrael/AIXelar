@@ -41,7 +41,7 @@ const WhyUsSection = () => {
                 Enterprise AI Solutions Built for Scale
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                AIXelar delivers intelligent automation, AI agents, workflow systems, and optimisation tools that transform how your business operates. We build custom AI solutions from customer support automation and predictive analytics to competitor analysis and data engineering designed to integrate seamlessly with your infrastructure.
+                Xelar delivers intelligent automation, AI agents, workflow systems, and optimisation tools that transform how your business operates. We build custom AI solutions from customer support automation and predictive analytics to competitor analysis and data engineering designed to integrate seamlessly with your infrastructure.
               </p>
               
               <div className="space-y-4">

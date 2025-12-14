@@ -33,7 +33,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>AIXelar OG Image Generator</h1>
+        <h1>Xelar OG Image Generator</h1>
         <div class="instructions">
             <p><strong>Instructions:</strong></p>
             <ol>
@@ -83,19 +83,18 @@
         ctx.arc(600, 180, 90, 0, Math.PI * 2);
         ctx.fill();
         
-        // AX text in logo
+        // X text in logo
         ctx.fillStyle = 'white';
         ctx.font = 'bold 80px system-ui, -apple-system, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('AX', 600, 180);
+        ctx.fillText('X', 600, 180);
         
         // Company name
         ctx.font = 'bold 78px system-ui, -apple-system, sans-serif';
-        ctx.fillStyle = 'white';
-        ctx.fillText('AI', 600, 340);
         ctx.fillStyle = '#14B8A6';
-        ctx.fillText('Xelar', 600 + ctx.measureText('AI').width, 340);
+        ctx.textAlign = 'center';
+        ctx.fillText('Xelar', 600, 340);
         
         // Slogan
         ctx.font = '600 36px system-ui, -apple-system, sans-serif';

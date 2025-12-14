@@ -1,21 +1,21 @@
 # FAQ
 # Frequently Asked Questions (FAQ)
 
-This FAQ covers the most common questions users ask about AIXelar, our services, pricing approach, implementation process, and AI capabilities.
+This FAQ covers the most common questions users ask about Xelar, our services, pricing approach, implementation process, and AI capabilities.
 
 ---
 
 ## GENERAL QUESTIONS
 
-### **What does AIXelar do?**
-AIXelar helps small and mid-sized businesses automate repetitive workflows, build AI assistants, improve business data pipelines, and streamline reporting.  
+### **What does Xelar do?**
+Xelar helps small and mid-sized businesses automate repetitive workflows, build AI assistants, improve business data pipelines, and streamline reporting.  
 We focus on practical results — reduced manual work, faster processes, and better decision-making.
 
-### **Do I need technical skills to work with AIXelar?**
-No. AIXelar handles all technical implementation, testing, and support.  
+### **Do I need technical skills to work with Xelar?**
+No. Xelar handles all technical implementation, testing, and support.  
 You just describe your business process and what you want to achieve.
 
-### **What industries does AIXelar support?**
+### **What industries does Xelar support?**
 We primarily work with:
 - Retail & e-commerce  
 - Car dealerships  
@@ -29,7 +29,7 @@ But we can work with any business that relies on manual operations.
 
 ## PRICING QUESTIONS
 
-### **How much does AIXelar charge?**
+### **How much does Xelar charge?**
 There is **no fixed price** because every project is different.  
 The cost depends on:
 - The type of automation or AI system  
@@ -146,11 +146,11 @@ Yes. We use:
 - Role-based access  
 - No sensitive data is stored without consent  
 
-AIXelar does not resell or reuse client data.
+Xelar does not resell or reuse client data.
 
 ### **Will AI replace my employees?**
 No.  
-AI at AIXelar is designed to:
+AI at Xelar is designed to:
 - Reduce manual workload  
 - Speed up tasks  
 - Improve accuracy  
@@ -169,7 +169,7 @@ Yes — optional monthly support is available for:
 - Expanding AI capabilities  
 
 ### **Can you integrate everything into one system?**
-Yes — AIXelar specializes in connecting multiple platforms so your business can operate smoothly end-to-end.
+Yes — Xelar specializes in connecting multiple platforms so your business can operate smoothly end-to-end.
 
 ### **Can you document the workflows?**
 Yes. Documentation includes:
@@ -192,7 +192,7 @@ Absolutely. Many clients begin with a simple automation, see impact, and scale f
 ### **Do you offer proof of concept (POC)?**
 Yes — for AI assistants, workflows, or dashboards.
 
-### **What do I need to prepare before working with AIXelar?**
+### **What do I need to prepare before working with Xelar?**
 Nothing complex.  
 Just bring:
 - Your business processes  
@@ -204,5 +204,5 @@ We translate the rest into technical solutions.
 
 ---
 
-If a user asks a question not covered in this FAQ, the assistant should answer based on the core AIXelar documents and business model.
+If a user asks a question not covered in this FAQ, the assistant should answer based on the core Xelar documents and business model.
 

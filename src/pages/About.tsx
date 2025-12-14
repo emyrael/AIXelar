@@ -28,7 +28,7 @@ const About = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 inline-block">
-              About AIXelar
+              About Xelar
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
               We Help Businesses{" "}
@@ -43,14 +43,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Why AIXelar Story */}
+      {/* Why Xelar Story */}
       <section className="py-24 bg-secondary/30">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Story</span>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-                Why AIXelar Exists
+                Why Xelar Exists
               </h2>
             </div>
 
@@ -87,7 +87,7 @@ const About = () => {
                     <h3 className="text-2xl font-bold text-foreground mb-4">Our Solution</h3>
                     <div className="space-y-4 text-muted-foreground leading-relaxed">
                       <p>
-                        AIXelar helps businesses grow by leveraging practical AI solutions. We build 
+                        Xelar helps businesses grow by leveraging practical AI solutions. We build 
                         automation systems that integrate with existing tools like Slack, Notion, WhatsApp, 
                         n8n, Zapier, Make.com, Calendly, CRM, and more.
                       </p>
@@ -105,7 +105,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* What AIXelar Does */}
+      {/* What Xelar Does */}
       <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -181,7 +181,7 @@ const About = () => {
                 </p>
                 <p>
                   Known for combining data engineering, AI automation, and cloud infrastructure to 
-                  deliver end-to-end results. Founder of AIXelar with a mission to make AI adoption 
+                  deliver end-to-end results. Founder of Xelar with a mission to make AI adoption 
                   simple, impactful, and accessible for businesses of all sizes.
                 </p>
                 <p className="text-foreground font-medium">

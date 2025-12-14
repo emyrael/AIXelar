@@ -34,7 +34,7 @@ const CTASection = () => {
             No commitment required. 30-minute strategy call.
           </p>
           <p className="text-sm text-primary-foreground/60 mt-4 font-medium">
-            AIXelar - Accelerate With Intelligence
+            Xelar - Accelerate With Intelligence
           </p>
         </div>
       </div>

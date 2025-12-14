@@ -1,7 +1,7 @@
 # Example Workflows
 # Example Workflows
 
-Below are real-world workflow examples used to educate customers on what AIXelar can build.
+Below are real-world workflow examples used to educate customers on what Xelar can build.
 
 ---
 

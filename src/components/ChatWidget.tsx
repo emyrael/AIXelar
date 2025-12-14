@@ -9,8 +9,8 @@ const CALENDLY_LINK = "https://calendly.com/emyraeleson/30min";
 
 // Fallback knowledge base (used if API fails)
 const FALLBACK_KB = {
-  overview: `AIXelar is an AI Automation & Data Engineering consultancy designed to help small and mid-sized businesses modernize their operations using practical, results-driven AI solutions. We focus on automating repetitive workflows, building AI-powered assistants, streamlining business operations through n8n, Zapier, Make, and custom integrations, improving data pipelines, dashboards, and analytics, and creating AI strategy roadmaps tailored to each business.`,
-  mission: `AIXelar exists to make AI simple, practical, and impactful. Our goal is to help businesses work smarter, reduce manual workload, increase revenue, and adopt automation without complexity.`,
+  overview: `Xelar is an AI Automation & Data Engineering consultancy designed to help small and mid-sized businesses modernize their operations using practical, results-driven AI solutions. We focus on automating repetitive workflows, building AI-powered assistants, streamlining business operations through n8n, Zapier, Make, and custom integrations, improving data pipelines, dashboards, and analytics, and creating AI strategy roadmaps tailored to each business.`,
+  mission: `Xelar exists to make AI simple, practical, and impactful. Our goal is to help businesses work smarter, reduce manual workload, increase revenue, and adopt automation without complexity.`,
   services: {
     workflow: `Workflow Automation using n8n, Zapier, Make (Integromat), WhatsApp automation via APIs, Email and SMS automation, Google Sheets, Excel, Notion workflows. Examples: Automatic lead capture → follow-up → reminders, Employee onboarding flows, Supplier order automation, Customer notifications, Calendar and appointment automation.`,
     data: `Data Engineering & Analytics using Databricks (Bronze/Silver/Gold), Snowflake, BigQuery, PostgreSQL & Supabase, Delta Lake, API ingestion & ETL scripts, BI dashboards (PowerBI, Tableau). Capabilities: Building production ETL/ELT pipelines, Merging data from multiple systems, Automating daily/weekly/monthly reports, Creating KPI dashboards for executives.`,
@@ -78,7 +78,7 @@ const ChatWidget = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hi! I'm AIXelar's AI Automation Strategist. I'm here to help you understand how AI and automation can improve your business operations. What would you like to know?",
+      text: "Hi! I'm Xelar's AI Automation Strategist. I'm here to help you understand how AI and automation can improve your business operations. What would you like to know?",
       sender: "assistant",
       timestamp: new Date(),
     },
@@ -131,7 +131,7 @@ const ChatWidget = () => {
       setMessages([
         {
           id: "1",
-          text: "Hi! I'm AIXelar's AI Automation Strategist. I'm here to help you understand how AI and automation can improve your business operations. What would you like to know?",
+          text: "Hi! I'm Xelar's AI Automation Strategist. I'm here to help you understand how AI and automation can improve your business operations. What would you like to know?",
           sender: "assistant",
           timestamp: new Date(),
         },
@@ -204,13 +204,13 @@ const ChatWidget = () => {
 
     // Greeting responses
     if (lowerMessage.includes("hello") || lowerMessage.includes("hi") || lowerMessage.includes("hey")) {
-      return "Hello! I'm AIXelar's AI Automation Strategist. I'm here to help you understand how AI and automation can improve your business operations. What industry are you in, or what challenges are you facing?";
+      return "Hello! I'm Xelar's AI Automation Strategist. I'm here to help you understand how AI and automation can improve your business operations. What industry are you in, or what challenges are you facing?";
     }
 
     // Industry-specific responses
     if (lowerMessage.includes("retail") || lowerMessage.includes("e-commerce") || lowerMessage.includes("shop")) {
       const industry = FALLBACK_KB.industries[0];
-      return `Great! For ${industry.name}, we often see challenges like ${industry.painPoints.slice(0, 2).join(" and ")}.\n\nAIXelar can help with:\n• ${industry.solutions.slice(0, 3).join("\n• ")}\n\nThese automations can reduce manual work and improve customer engagement. What's your biggest operational challenge right now?`;
+      return `Great! For ${industry.name}, we often see challenges like ${industry.painPoints.slice(0, 2).join(" and ")}.\n\nXelar can help with:\n• ${industry.solutions.slice(0, 3).join("\n• ")}\n\nThese automations can reduce manual work and improve customer engagement. What's your biggest operational challenge right now?`;
     }
 
     if (lowerMessage.includes("car") || lowerMessage.includes("dealership") || lowerMessage.includes("automotive")) {
@@ -220,7 +220,7 @@ const ChatWidget = () => {
 
     if (lowerMessage.includes("logistics") || lowerMessage.includes("transport") || lowerMessage.includes("shipping")) {
       const industry = FALLBACK_KB.industries[2];
-      return `Excellent! For ${industry.name}, AIXelar offers:\n\n• ${industry.solutions.join("\n• ")}\n\nThese automations improve communication and operational efficiency. What specific pain points are you experiencing?`;
+      return `Excellent! For ${industry.name}, Xelar offers:\n\n• ${industry.solutions.join("\n• ")}\n\nThese automations improve communication and operational efficiency. What specific pain points are you experiencing?`;
     }
 
     if (lowerMessage.includes("healthcare") || lowerMessage.includes("clinic") || lowerMessage.includes("medical")) {
@@ -230,7 +230,7 @@ const ChatWidget = () => {
 
     if (lowerMessage.includes("agency") || lowerMessage.includes("marketing") || lowerMessage.includes("digital")) {
       const industry = FALLBACK_KB.industries[4];
-      return `For ${industry.name}, AIXelar can automate:\n\n• ${industry.solutions.join("\n• ")}\n\nThis frees up time for strategic work. What manual tasks take up most of your team's time?`;
+      return `For ${industry.name}, Xelar can automate:\n\n• ${industry.solutions.join("\n• ")}\n\nThis frees up time for strategic work. What manual tasks take up most of your team's time?`;
     }
 
     if (lowerMessage.includes("real estate") || lowerMessage.includes("property")) {
@@ -240,7 +240,7 @@ const ChatWidget = () => {
 
     // Service questions
     if (lowerMessage.includes("what do you do") || lowerMessage.includes("services") || lowerMessage.includes("what can you")) {
-      return `AIXelar offers four core services:\n\n1. Workflow Automation (n8n, Zapier, Make, WhatsApp automation)\n2. Data Engineering & Analytics (Databricks, Snowflake, BigQuery, dashboards)\n3. AI Assistants & Intelligent Systems (chatbots, RAG assistants, copilots)\n4. AI Strategy & Roadmap Consulting\n\nWe help businesses automate repetitive tasks, build AI assistants, improve data pipelines, and create strategic roadmaps. What area interests you most?`;
+      return `Xelar offers four core services:\n\n1. Workflow Automation (n8n, Zapier, Make, WhatsApp automation)\n2. Data Engineering & Analytics (Databricks, Snowflake, BigQuery, dashboards)\n3. AI Assistants & Intelligent Systems (chatbots, RAG assistants, copilots)\n4. AI Strategy & Roadmap Consulting\n\nWe help businesses automate repetitive tasks, build AI assistants, improve data pipelines, and create strategic roadmaps. What area interests you most?`;
     }
 
     // Pricing questions - trigger CTA
@@ -333,7 +333,7 @@ const ChatWidget = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              Chat with AIXelar Assistant
+              Chat with Xelar Assistant
             </p>
           </div>
           {/* Chat Button */}
@@ -355,7 +355,7 @@ const ChatWidget = () => {
           {/* Header */}
           <div className="bg-accent text-accent-foreground p-4 rounded-t-2xl flex items-center justify-between">
             <div>
-              <h3 className="font-semibold">AIXelar Assistant</h3>
+              <h3 className="font-semibold">Xelar Assistant</h3>
               <p className="text-xs opacity-90">AI Automation Strategist</p>
             </div>
             <button

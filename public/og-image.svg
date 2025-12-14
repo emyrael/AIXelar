@@ -24,12 +24,12 @@
   <!-- Main Logo Circle (matching favicon style) -->
   <g transform="translate(600, 180)">
     <circle cx="0" cy="0" r="90" fill="url(#accentGradient)"/>
-    <text x="0" y="28" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="80" font-weight="700" fill="white" text-anchor="middle" letter-spacing="-4">AX</text>
+    <text x="0" y="28" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="80" font-weight="700" fill="white" text-anchor="middle" letter-spacing="-4">X</text>
   </g>
   
-  <!-- Company Name - AIXelar -->
-  <text x="600" y="340" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="white" text-anchor="middle" letter-spacing="-2">
-    <tspan fill="white">AI</tspan><tspan fill="#14B8A6">Xelar</tspan>
+  <!-- Company Name - Xelar -->
+  <text x="600" y="340" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#14B8A6" text-anchor="middle" letter-spacing="-2">
+    Xelar
   </text>
   
   <!-- Slogan -->

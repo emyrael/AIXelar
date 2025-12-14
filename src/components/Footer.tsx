@@ -65,7 +65,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <a href="#" className="text-2xl font-bold">
-              <span className="text-primary-foreground">AI</span><span className="text-accent">Xelar</span>
+              <span className="text-accent">Xelar</span>
             </a>
             <p className="mt-4 text-primary-foreground/60 text-sm leading-relaxed">
               Custom AI solutions for businesses ready to scale. From chatbots to full automation systems.
@@ -155,7 +155,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-primary-foreground/40">
-            © {new Date().getFullYear()} AIXelar. All rights reserved.
+            © {new Date().getFullYear()} Xelar. All rights reserved.
           </p>
           <p className="text-sm text-primary-foreground/40 font-medium">
             Accelerate With Intelligence

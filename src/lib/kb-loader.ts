@@ -58,9 +58,9 @@ export const loadKnowledgeBaseFiles = async (): Promise<KnowledgeBaseContent> =>
     console.error('❌ Error loading knowledge base files:', error);
     // Return basic fallback content if files can't be loaded
     return {
-      overview: `# AIXelar Overview
+      overview: `# Xelar Overview
 
-AIXelar is an AI Automation & Data Engineering consultancy designed to help small and mid-sized businesses modernize their operations using practical, results-driven AI solutions.
+Xelar is an AI Automation & Data Engineering consultancy designed to help small and mid-sized businesses modernize their operations using practical, results-driven AI solutions.
 
 We focus on:
 - Automating repetitive workflows
@@ -70,20 +70,20 @@ We focus on:
 - Creating AI strategy roadmaps tailored to each business
 
 ## Mission
-AIXelar exists to make AI **simple**, **practical**, and **impactful**.  
+Xelar exists to make AI **simple**, **practical**, and **impactful**.  
 Our goal is to help businesses work smarter, reduce manual workload, increase revenue, and adopt automation without complexity.
 
 ## Founder
-AIXelar was founded by **Emmanuel Onwubuya**, an AI Data Engineer with hands-on engineering experience across consulting, manufacturing, healthcare technology, advertising & marketing analytics, and automation engineering.
+Xelar was founded by **Emmanuel Onwubuya**, an AI Data Engineer with hands-on engineering experience across consulting, manufacturing, healthcare technology, advertising & marketing analytics, and automation engineering.
 
-## What Makes AIXelar Different
+## What Makes Xelar Different
 - We simplify AI — no technical jargon unless required.
 - We focus on **practical automation**, not hype.
 - We serve industries that benefit most from workflow automation: retail, logistics, car dealerships, healthcare operations, agencies, real estate.
 - We deliver fast — most workflows are implemented within days or weeks.
 - Our solutions integrate with the tools businesses already use.`,
 
-    services: `# AIXelar Services
+    services: `# Xelar Services
 
 ## 1. Workflow Automation
 We automate repetitive tasks and build smart operational workflows using n8n, Zapier, Make (Integromat), WhatsApp automation via APIs, Email and SMS automation, Google Sheets, Excel, Notion workflows.
@@ -103,7 +103,7 @@ These assistants integrate with: Supabase vector databases, Pinecone, Company do
 ## 4. AI Strategy & Roadmap Consulting
 We help businesses define their AI adoption path. In each roadmap session: We analyze your business processes, Identify automation opportunities, Recommend workflows, Estimate implementation effort, Create a 30–90 day action plan.`,
 
-    industries: `# Industries AIXelar Serves
+    industries: `# Industries Xelar Serves
 
 ## 1. Retail & E-Commerce
 Common pain points: Manual order tracking, Inventory management, Customer engagement, Slow reporting.
@@ -153,18 +153,18 @@ Flow: Sync Calendly / booking form submissions → Send reminders → Auto-resch
 
 ## GENERAL QUESTIONS
 
-**What does AIXelar do?**
-AIXelar helps small and mid-sized businesses automate repetitive workflows, build AI assistants, improve business data pipelines, and streamline reporting. We focus on practical results — reduced manual work, faster processes, and better decision-making.
+**What does Xelar do?**
+Xelar helps small and mid-sized businesses automate repetitive workflows, build AI assistants, improve business data pipelines, and streamline reporting. We focus on practical results — reduced manual work, faster processes, and better decision-making.
 
-**Do I need technical skills to work with AIXelar?**
-No. AIXelar handles all technical implementation, testing, and support. You just describe your business process and what you want to achieve.
+**Do I need technical skills to work with Xelar?**
+No. Xelar handles all technical implementation, testing, and support. You just describe your business process and what you want to achieve.
 
-**What industries does AIXelar support?**
+**What industries does Xelar support?**
 We primarily work with: Retail & e-commerce, Car dealerships, Logistics & transportation, Healthcare clinics (non-medical workflows), Marketing & digital agencies, Real estate. But we can work with any business that relies on manual operations.
 
 ## PRICING QUESTIONS
 
-**How much does AIXelar charge?**
+**How much does Xelar charge?**
 There is **no fixed price** because every project is different. The cost depends on: The type of automation or AI system, The tools involved (n8n, Zapier, APIs, databases, etc.), The number of workflows or pipelines, The complexity of your business processes, Whether you need AI assistants, RAG systems, dashboards, or data pipelines.
 
 **Can you give me an estimate?**
@@ -195,10 +195,10 @@ Typical timelines: Small workflows: **1–5 days**, Medium workflows: **1–2 we
 **Can you work with my existing tools?**
 Yes. Most automations are built using the tools you already use.`,
 
-    engagement: `# AIXelar Engagement Model
+    engagement: `# Xelar Engagement Model
 
 ## 1. Discovery & AI Roadmap Call (Primary CTA)
-A 30-minute session where we: Learn about the business, Understand the current tools, Identify bottlenecks, Determine goals, Suggest 2–3 automation opportunities, Estimate timeframes, Build a mini roadmap. This is the best way for businesses to begin with AIXelar.
+A 30-minute session where we: Learn about the business, Understand the current tools, Identify bottlenecks, Determine goals, Suggest 2–3 automation opportunities, Estimate timeframes, Build a mini roadmap. This is the best way for businesses to begin with Xelar.
 
 ## 2. Business Process Audit
 We review: Current workflows, Data sources, Software tools, Manual tasks, Communication channels, Reporting needs.

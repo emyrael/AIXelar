@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Marcus Thompson",
     role: "Owner, Thompson's Auto Repair",
-    content: "The AI chatbot AIXelar built for our shop handles customer inquiries after hours. We're getting bookings even when we're closed. Game changer for a small business like ours.",
+    content: "The AI chatbot Xelar built for our shop handles customer inquiries after hours. We're getting bookings even when we're closed. Game changer for a small business like ours.",
     rating: 5,
   },
   {
@@ -16,13 +16,13 @@ const testimonials = [
   {
     name: "James Wilson",
     role: "Manager, Wilson & Sons Plumbing",
-    content: "The AIXelar team understood our needs quickly and delivered a solution that helps us schedule jobs more efficiently. Response time was great, and the system works exactly as promised.",
+    content: "The Xelar team understood our needs quickly and delivered a solution that helps us schedule jobs more efficiently. Response time was great, and the system works exactly as promised.",
     rating: 5,
   },
   {
     name: "Lisa Martinez",
     role: "Owner, Martinez Bakery",
-    content: "We're a small family business, and AIXelar made AI feel accessible. The email automation they set up saves us hours each week. Would definitely recommend to other small businesses.",
+    content: "We're a small family business, and Xelar made AI feel accessible. The email automation they set up saves us hours each week. Would definitely recommend to other small businesses.",
     rating: 4,
   },
   {
@@ -34,7 +34,7 @@ const testimonials = [
   {
     name: "Amanda Foster",
     role: "Owner, Foster's Pet Care",
-    content: "AIXelar created a simple booking system with AI that helps us manage appointments and send reminders. Our customers love it, and we love the time it saves us. Great value for the price.",
+    content: "Xelar created a simple booking system with AI that helps us manage appointments and send reminders. Our customers love it, and we love the time it saves us. Great value for the price.",
     rating: 5,
   },
 ];

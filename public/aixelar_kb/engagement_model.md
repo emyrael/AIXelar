@@ -1,7 +1,7 @@
 # Engagement Model
-# AIXelar Engagement Model
+# Xelar Engagement Model
 
-This explains how AIXelar works with clients from first contact to delivery.
+This explains how Xelar works with clients from first contact to delivery.
 
 ---
 
@@ -15,7 +15,7 @@ A 30-minute session where we:
 - Estimate timeframes
 - Build a mini roadmap
 
-This is the best way for businesses to begin with AIXelar.
+This is the best way for businesses to begin with Xelar.
 
 ---
 

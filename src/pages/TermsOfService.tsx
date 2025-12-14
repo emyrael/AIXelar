@@ -29,7 +29,7 @@ const TermsOfService = () => {
               Terms of Service
             </h1>
             <p className="text-muted-foreground mb-8">
-              Welcome to AIXelar. By accessing or using aixelar.io, you agree to these Terms of Service ("Terms"). If you do not agree, please discontinue using our website.
+              Welcome to Xelar. By accessing or using aixelar.io, you agree to these Terms of Service ("Terms"). If you do not agree, please discontinue using our website.
             </p>
 
             <div className="space-y-8">
@@ -57,15 +57,15 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-bold text-foreground mb-4">2. Consultations & Services</h2>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
                   <li>Submitting the contact form does not create a client relationship.</li>
-                  <li>A relationship is only established when a formal proposal, agreement, or contract is signed between you and AIXelar.</li>
-                  <li>AIXelar reserves the right to decline projects that fall outside our scope or capacity.</li>
+                  <li>A relationship is only established when a formal proposal, agreement, or contract is signed between you and Xelar.</li>
+                  <li>Xelar reserves the right to decline projects that fall outside our scope or capacity.</li>
                 </ul>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">3. Intellectual Property</h2>
                 <p className="text-muted-foreground mb-2">
-                  All content on this website—including text, branding, images, and design—is the property of AIXelar and protected by copyright and intellectual property laws.
+                  All content on this website—including text, branding, images, and design—is the property of Xelar and protected by copyright and intellectual property laws.
                 </p>
                 <p className="text-muted-foreground">
                   You may not reproduce or redistribute any content without permission.
@@ -75,7 +75,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">4. Disclaimer</h2>
                 <p className="text-muted-foreground mb-2">
-                  AIXelar provides information "as is."
+                  Xelar provides information "as is."
                 </p>
                 <p className="text-muted-foreground mb-2">
                   We do not guarantee:
@@ -93,7 +93,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">5. Limitation of Liability</h2>
                 <p className="text-muted-foreground mb-2">
-                  AIXelar is not liable for:
+                  Xelar is not liable for:
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
                   <li>any indirect or consequential damages</li>
@@ -108,7 +108,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">6. External Links</h2>
                 <p className="text-muted-foreground">
-                  This website may contain links to external websites. AIXelar is not responsible for the content or practices of third-party sites.
+                  This website may contain links to external websites. Xelar is not responsible for the content or practices of third-party sites.
                 </p>
               </section>
 
