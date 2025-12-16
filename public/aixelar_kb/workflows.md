@@ -62,5 +62,65 @@ Flow:
 
 ---
 
+## 6. Secure Portal Reporting Workflow
+
+This workflow demonstrates how data flows through a secure portal system with proper governance.
+
+**Trigger:**
+- Scheduled (daily/weekly/monthly) OR
+- Manual trigger from portal OR
+- Data source update detected
+
+**Flow:**
+1. **Data Source → Ingestion/Validation**
+   - Pull data from source systems (Shopify, POS, CRM, ads platforms, etc.)
+   - Validate data quality and completeness
+   - Handle errors and retries
+
+2. **KPI Computation**
+   - Calculate business KPIs (revenue, profit, conversion rates, etc.)
+   - Apply business rules and formulas
+   - Aggregate data across sources
+
+3. **Report Generation**
+   - Format data into reports (tables, charts, summaries)
+   - Generate PDF, Excel, or CSV exports
+   - Prepare dashboard visualizations
+
+4. **Optional Approval Step**
+   - Route report to approver (if configured)
+   - Track approval status
+   - Log approval actions in audit trail
+
+5. **Portal Display**
+   - Publish report to secure portal
+   - Make available to authorized users based on RBAC
+   - Update real-time dashboards
+
+6. **Optional Alerts**
+   - Send email notifications to stakeholders
+   - Send WhatsApp alerts (if configured)
+   - Trigger additional workflows based on thresholds
+
+7. **Audit Logging**
+   - Record all actions (data pulls, report generation, access, exports)
+   - Track who accessed what and when
+   - Maintain compliance trail
+
+**Security Features:**
+- Encrypted data connections from source systems
+- Encrypted storage of processed data
+- Role-based access control (only authorized users see reports)
+- Audit logs for all actions
+- Optional approval workflows before publishing
+
+**Example Use Cases:**
+- Daily sales reports for retail businesses
+- Weekly marketing performance for agencies
+- Monthly financial summaries for executives
+- Real-time inventory dashboards for operations teams
+
+---
+
 These workflows help businesses understand practical applications of automation.
 

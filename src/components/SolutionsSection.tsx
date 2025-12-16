@@ -4,52 +4,53 @@ import {
   Workflow, 
   BarChart3, 
   Plug,
-  Headphones,
+  Shield,
   TrendingUp,
   Globe,
-  Search
+  Search,
+  Database
 } from "lucide-react";
 
 const solutions = [
+  {
+    icon: Shield,
+    title: "Secure Client Portals",
+    description: "Build secure login portals where clients can upload data, monitor KPIs in real-time, download reports, and interact with their business data. Features include role-based access control, encrypted connections, and complete audit logs.",
+  },
   {
     icon: MessageSquare,
     title: "AI Chatbots & Assistants",
     description: "Intelligent conversational AI that handles customer inquiries, reduces support costs, and improves response times. Deploy 24/7 customer service that scales with your business.",
   },
   {
-    icon: Headphones,
-    title: "AI Customer Support Automation",
-    description: "End-to-end customer support automation that routes inquiries, resolves common issues, and escalates complex cases. Reduce support costs while improving customer satisfaction.",
+    icon: Database,
+    title: "Data Engineering & Pipelines",
+    description: "Build robust data pipelines that connect multiple sources, transform data, and deliver insights. Automated data ingestion, validation, and processing that keeps your systems always up-to-date.",
   },
   {
-    icon: TrendingUp,
-    title: "Sales & CRM Automation",
-    description: "Intelligent sales automation that qualifies leads, nurtures prospects, and optimizes your sales pipeline. Increase conversion rates and accelerate revenue growth.",
+    icon: BarChart3,
+    title: "Automated Reporting & Dashboards",
+    description: "Automated reporting systems that generate scheduled reports, real-time dashboards, and KPI visualizations. Export reports in multiple formats and distribute automatically via email, portal, or messaging.",
+  },
+  {
+    icon: Workflow,
+    title: "Workflow Automation",
+    description: "End-to-end workflow automation that eliminates manual tasks, reduces operational costs, and increases productivity. Streamline operations from lead capture to order fulfillment and everything in between.",
   },
   {
     icon: Brain,
     title: "RAG Knowledge Systems",
-    description: "Enterprise knowledge management systems that make your company's data instantly searchable and accessible. Empower teams with intelligent document retrieval and insights.",
+    description: "Enterprise knowledge management systems that make your company's data instantly searchable and accessible. Empower teams with intelligent document retrieval and insights from your own documents.",
   },
   {
-    icon: Workflow,
-    title: "Process Automation",
-    description: "End-to-end workflow automation that eliminates manual tasks, reduces operational costs, and increases productivity. Streamline operations from data entry to complex business processes.",
-  },
-  {
-    icon: Globe,
-    title: "AI Website Optimization",
-    description: "Conversion rate optimization and personalization powered by AI. Improve user experience, increase engagement, and boost conversion rates through intelligent website personalization.",
-  },
-  {
-    icon: BarChart3,
-    title: "AI Forecasting & Business Intelligence",
-    description: "Predictive analytics and business intelligence dashboards that transform data into actionable insights. Make data-driven decisions with AI-powered forecasting and real-time analytics.",
+    icon: TrendingUp,
+    title: "Sales & CRM Automation",
+    description: "Intelligent sales automation that qualifies leads, nurtures prospects, and optimizes your sales pipeline. Increase conversion rates and accelerate revenue growth with automated follow-ups and workflows.",
   },
   {
     icon: Plug,
-    title: "System Integration & Automation",
-    description: "Seamless integration of your existing systems with intelligent automation. Connect CRM, ERP, and third-party applications to create unified, automated workflows.",
+    title: "System Integration",
+    description: "Seamless integration of your existing systems with intelligent automation. Connect CRM, ERP, e-commerce platforms, and third-party applications to create unified, automated workflows.",
   },
   {
     icon: Search,

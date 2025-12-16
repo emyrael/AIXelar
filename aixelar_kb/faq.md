@@ -7,23 +7,43 @@ This FAQ covers the most common questions users ask about Xelar, our services, p
 
 ## GENERAL QUESTIONS
 
+### **What is Xelar and your mission?**
+Xelar is an AI Automation & Data Engineering consultancy that helps small and mid-sized businesses modernize their operations using practical, results-driven AI solutions.
+
+**Our Mission:** Xelar exists to make AI simple, practical, and impactful. We help businesses work smarter, reduce manual workload, increase revenue, and adopt automation without complexity.
+
+**What Makes Us Different:** We're not just chat—we build connected systems + automation. We focus on practical automation, not hype, and deliver fast implementations that integrate with tools businesses already use.
+
 ### **What does Xelar do?**
 Xelar helps small and mid-sized businesses automate repetitive workflows, build AI assistants, improve business data pipelines, and streamline reporting.  
 We focus on practical results — reduced manual work, faster processes, and better decision-making.
+
+### **What problems do you solve?**
+We solve common business challenges:
+- **Manual, repetitive tasks** → Automated workflows
+- **Disconnected data sources** → Unified data pipelines and dashboards
+- **Slow reporting** → Automated, scheduled reports
+- **Lack of visibility** → Real-time KPIs and monitoring
+- **Security concerns** → Secure portals with access control
+- **Team collaboration** → Shared dashboards and approval workflows
+- **Data governance** → Audit trails and role-based access
 
 ### **Do I need technical skills to work with Xelar?**
 No. Xelar handles all technical implementation, testing, and support.  
 You just describe your business process and what you want to achieve.
 
 ### **What industries does Xelar support?**
-We primarily work with:
+We support a wide range of industries. All we need to know is your challenge, and we can discuss how automation and AI can help solve it.
+
+Some examples of industries we've worked with include:
 - Retail & e-commerce  
 - Car dealerships  
 - Logistics & transportation  
 - Healthcare clinics (non-medical workflows)  
 - Marketing & digital agencies  
 - Real estate  
-But we can work with any business that relies on manual operations.
+
+If your industry isn't listed here, that's fine. We work with any business that has manual processes, repetitive tasks, or data challenges that could benefit from automation and AI solutions.
 
 ---
 
@@ -102,11 +122,32 @@ Yes. The roadmap provides:
 ## TIMELINE & IMPLEMENTATION
 
 ### **How long does it take to build automations?**
-Typical timelines:
+Timelines depend on complexity, integrations, and security requirements:
+
+**Typical Timelines:**
 - Small workflows: **1–5 days**
 - Medium workflows: **1–2 weeks**
 - AI assistants / chatbots: **1–3 weeks**
 - Data pipelines / dashboards: **2–8 weeks**
+- Secure portals with authentication: **2–6 weeks** (MVP)
+- Full system rollout: **6–12+ weeks** (comprehensive systems)
+
+**Factors Affecting Timeline:**
+- Number and complexity of integrations
+- Security and compliance requirements
+- Data access and API availability
+- Number of workflows and features
+- Client feedback cycles
+
+**Delivery Phases:**
+1. Discovery workshop (1-2 days)
+2. Roadmap (3-5 days)
+3. MVP build (2-6 weeks)
+4. Iterate (1-4 weeks)
+5. Launch (1 week)
+6. Support (ongoing, optional)
+
+We provide detailed timelines after the discovery workshop.
 
 ### **How do we get started?**
 1. Discovery & AI Strategy Call  
@@ -140,13 +181,102 @@ Yes. We build:
 - Internal Q&A bots  
 
 ### **Is my business data safe?**
-Yes. We use:
-- Secure APIs  
-- Encrypted databases (Supabase, PostgreSQL)  
-- Role-based access  
-- No sensitive data is stored without consent  
+Yes. We implement multiple layers of security:
 
-Xelar does not resell or reuse client data.
+**Data Protection:**
+- Encrypted data in transit (HTTPS/TLS for all connections)
+- Encrypted data at rest (database encryption)
+- Secure API connections to your systems
+- Credential management and secure key storage
+
+**Access Control:**
+- Role-based access control (RBAC) - who can see and do what
+- Optional Single Sign-On (SSO) and Multi-Factor Authentication (MFA)
+- User management and permission assignment
+- Session management and timeout controls
+
+**Data Governance:**
+- Audit logs tracking all access and actions
+- Data retention policies controlled by the client
+- No sensitive data stored without explicit consent
+
+**Data Ownership:**
+- Xelar does not resell or reuse client data
+- Client controls where data is stored (client environment vs secure hosted storage)
+- Client controls data retention policies
+
+### **Can you build a secure portal?**
+Yes! We can build secure client portals that provide a private, controlled interface for accessing automation and data.
+
+**Portal Features:**
+- Private URL (e.g., `/monitoring` or `portal.clientdomain.com`)
+- Upload and approve data pulls
+- Trigger workflows on-demand
+- View real-time KPIs and dashboards
+- Download reports (PDF, Excel, CSV)
+- Set custom alerts
+- Multi-user support with role-based access
+
+**Security:**
+- Authentication (login/password or SSO)
+- Role-based access control (RBAC)
+- Optional SSO/MFA
+- Encrypted connections and storage
+- Complete audit logs
+
+Portals are ideal when you need governance, team collaboration, and controlled access to sensitive business data.
+
+### **How do you secure client data (encryption, access control)?**
+We implement enterprise-grade security:
+
+**Encryption:**
+- All data in transit is encrypted using HTTPS/TLS
+- Data at rest is encrypted using database encryption
+- Secure API connections to client systems
+- Credential management with secure key storage
+
+**Access Control:**
+- Role-based access control (RBAC) - define who can see and do what
+- Optional Single Sign-On (SSO) integration
+- Multi-Factor Authentication (MFA) support
+- User management and permission assignment
+- Session management and timeout controls
+
+**Audit & Compliance:**
+- Complete audit logs tracking all access and actions
+- Data retention policies controlled by the client
+- Compliance-ready logging and reporting
+
+### **Where is the data stored?**
+Data storage depends on the project and client preferences:
+
+**Options:**
+- **Client Environment:** Data stored in client's own infrastructure (on-premises or client cloud)
+- **Secure Hosted Storage:** Data stored in secure cloud infrastructure with encryption
+- **Hybrid:** Some data in client environment, some in secure hosted storage
+
+**Typical Implementation:**
+- We use platforms like Supabase, PostgreSQL, or similar modern databases
+- All storage options include encryption at rest
+- Client controls data retention and deletion policies
+- We discuss storage options during the discovery phase
+
+### **Who can access the portal?**
+Access is controlled through Role-Based Access Control (RBAC):
+
+**Access Levels:**
+- **Admins:** Full access to all features, user management, system configuration
+- **Managers:** Access to reports, dashboards, workflow triggers, limited user management
+- **Viewers:** Read-only access to reports and dashboards
+- **Custom Roles:** Defined based on your business needs
+
+**Features:**
+- Admin controls who has access and what permissions they have
+- Optional Single Sign-On (SSO) integration
+- Multi-Factor Authentication (MFA) support
+- Complete audit logs showing who accessed what and when
+
+You define the roles and permissions based on your team structure and needs.
 
 ### **Will AI replace my employees?**
 No.  
@@ -162,11 +292,41 @@ Not replace them.
 ## PROCESS & SUPPORT
 
 ### **Do you offer maintenance after implementation?**
-Yes — optional monthly support is available for:
-- Monitoring automations  
-- Fixing errors  
-- Adding new workflows  
-- Expanding AI capabilities  
+Yes — optional ongoing support packages are available for:
+- Monitoring automations and workflows
+- Fixing errors and issues
+- Adding new workflows and features
+- Expanding AI capabilities
+- Performance optimization
+- Security updates
+
+**Support Packages:**
+- Scope-based pricing (no fixed price)
+- Tailored to your specific needs
+- Can include monitoring, maintenance, and feature additions
+- Discussed during roadmap phase
+
+### **What does ongoing support look like?**
+Ongoing support can include:
+
+**Monitoring & Maintenance:**
+- System health monitoring
+- Workflow execution tracking
+- Error detection and resolution
+- Performance optimization
+
+**Enhancements:**
+- Adding new workflows
+- Expanding features
+- Integrating new data sources
+- Security updates
+
+**Support Levels:**
+- Full documentation & handover (you manage it)
+- Ongoing support retainer (we monitor and maintain)
+- Continuous expansion (we add features over time)
+
+Support packages are scope-based and customized to your needs.  
 
 ### **Can you integrate everything into one system?**
 Yes — Xelar specializes in connecting multiple platforms so your business can operate smoothly end-to-end.
@@ -178,8 +338,8 @@ Yes. Documentation includes:
 - Inputs/outputs  
 - Error handling rules  
 
-### **What if I don’t know what I need?**
-That’s normal.  
+### **What if I don't know what I need?**
+That's normal.  
 The AI Strategy Call will help identify your best opportunities and easy wins.
 
 ---
@@ -204,6 +364,29 @@ We translate the rest into technical solutions.
 
 ---
 
+### **How does pricing work?**
+**No fixed price** — all pricing is scope-based.
+
+**Pricing Process:**
+1. **Discovery Call** (free) - We understand your needs
+2. **Roadmap** - We create a detailed plan with estimates
+3. **Custom Quote** - Based on your specific requirements
+
+**What Affects Pricing:**
+- Type of automation or system
+- Tools and integrations involved
+- Number of workflows or pipelines
+- Complexity of processes
+- Security and compliance requirements
+- Whether you need portals, dashboards, or AI assistants
+
+**Pricing Includes:**
+- Implementation (one-time)
+- Optional ongoing support (monthly/quarterly)
+
+We provide transparent estimates after understanding your specific needs. No surprises—everything is discussed and agreed upon before starting.
+
+---
+
 If a user asks a question not covered in this FAQ, the assistant should answer based on the core Xelar documents and business model.
 
-...

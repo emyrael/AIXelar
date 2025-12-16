@@ -64,6 +64,60 @@ Options:
 
 ---
 
+## 6. Delivery + Ownership
+
+**Delivery Phases:**
+
+1. **Discovery Workshop** (1-2 days)
+   - Deep dive into business processes
+   - Identify data sources and tools
+   - Define goals and success metrics
+   - Map out automation opportunities
+
+2. **Roadmap** (3-5 days)
+   - Create detailed implementation plan
+   - Prioritize workflows and features
+   - Estimate effort and timelines
+   - Define security and access requirements
+
+3. **MVP Build** (2-6 weeks, depending on complexity)
+   - Build core workflows and integrations
+   - Implement basic portal (if required)
+   - Set up authentication and access control
+   - Create initial reports and dashboards
+
+4. **Iterate** (1-4 weeks)
+   - Gather feedback from stakeholders
+   - Refine workflows and features
+   - Add additional integrations
+   - Enhance security and governance
+
+5. **Launch** (1 week)
+   - Final testing and validation
+   - User training and documentation
+   - Go-live support
+   - Handover to client
+
+6. **Support** (Ongoing, optional)
+   - Monitoring and maintenance
+   - Bug fixes and improvements
+   - Adding new features
+   - Performance optimization
+
+**Timeline Ranges:**
+- **MVP:** ~2-6 weeks depending on integrations and complexity
+- **Full Rollout:** ~6-12+ weeks for comprehensive systems with multiple workflows, portals, and integrations
+
+**Important:** Timelines depend on:
+- Data access and API availability
+- Complexity of integrations required
+- Security and compliance requirements
+- Number of workflows and features
+- Client feedback cycles
+
+**Pricing:** All projects are scope-based. We provide detailed estimates after the discovery workshop and roadmap phase. No fixed pricing—each project is customized to your needs.
+
+---
+
 This model keeps projects simple, predictable, and outcome-driven.
 
-...

@@ -132,5 +132,106 @@ We optimize your digital presence using AI:
 
 ---
 
+## 7. Secure Portal Interface (Client Dashboard)
+
+We build secure, private portals that give your team and clients controlled access to automation, data, and insights. We can also implement WhatsApp automation, webhooks, email notifications, or other communication channels based on your specific requirements and use case.
+
+**Portal Capabilities:**
+- Private URL access (e.g., `/monitoring` or `portal.clientdomain.com`)
+- Upload and approve data pulls
+- Trigger workflows on-demand
+- View real-time KPIs and dashboards
+- Download reports (PDF, Excel, CSV)
+- Set custom alerts and notifications
+- Multi-user support with different permission levels
+
+**Security Features:**
+- Authentication (login/password or SSO)
+- Role-based access control (RBAC) - admins, managers, viewers have different permissions
+- Optional Single Sign-On (SSO) and Multi-Factor Authentication (MFA)
+- Encrypted data in transit (HTTPS/TLS)
+- Encrypted data at rest (database encryption)
+- Audit logs tracking all access and actions
+- Data retention policies controlled by the client
+
+**Typical Implementation Options:**
+- Built on platforms like Supabase, Next.js, or similar modern frameworks
+- Integrates with existing authentication providers (Auth0, Okta, etc.) when needed
+- Can be hosted in client's environment or secure cloud infrastructure
+
+---
+
+## 8. Authentication + Access Control
+
+We implement enterprise-grade security for client portals and systems.
+
+**Access Control Features:**
+- Role-based access control (RBAC) - define who can see and do what
+- Optional Single Sign-On (SSO) integration
+- Multi-Factor Authentication (MFA) support
+- User management and permission assignment
+- Session management and timeout controls
+
+**Typical Implementation:**
+- Standard authentication patterns (login/password)
+- Integration with existing identity providers when needed
+- Custom role definitions based on business needs
+
+---
+
+## 9. Encrypted Data Connectors & Secure Storage
+
+We ensure your data connections and storage meet security requirements.
+
+**Data Security:**
+- Encrypted connections (HTTPS/TLS) for all data in transit
+- Encrypted storage options for data at rest
+- Secure API connections to your existing systems
+- Credential management and secure key storage
+
+**Storage Options:**
+- Client-controlled environments (on-premises or client cloud)
+- Secure hosted storage with encryption
+- Depends on project requirements and client preferences
+
+---
+
+## 10. Automated Reporting + Monitoring
+
+We build automated reporting systems that keep stakeholders informed.
+
+**Reporting Capabilities:**
+- Scheduled reports (daily, weekly, monthly)
+- Real-time dashboards
+- Custom KPI calculations
+- Multi-format exports (PDF, Excel, CSV)
+- Automated distribution (email, portal, WhatsApp)
+
+**Monitoring Features:**
+- Real-time alerts for thresholds and anomalies
+- System health monitoring
+- Workflow execution tracking
+- Performance metrics
+
+---
+
+## 11. Ongoing Support/Maintenance Packages
+
+We offer optional support packages to keep your systems running smoothly.
+
+**Support Services:**
+- Monitoring automations and workflows
+- Fixing errors and issues
+- Adding new workflows and features
+- Expanding AI capabilities
+- Performance optimization
+- Security updates
+
+**Pricing:** Support packages are scope-based and tailored to your needs. No fixed price—we discuss requirements and provide a custom quote.
+
+---
+
 # Summary
-Xelar provides end-to-end AI and automation services—from strategy and design to implementation and optimization, including competitor analysis, market intelligence, and digital optimization.
+Xelar provides end-to-end AI and automation services—from strategy and design to implementation and optimization, including competitor analysis, market intelligence, digital optimization, secure portals, and ongoing support.
+
+**Pricing:** All services are scope-based. There is no fixed price—we provide custom quotes after understanding your specific needs through a discovery call.

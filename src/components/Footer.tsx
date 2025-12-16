@@ -48,6 +48,7 @@ const Footer = () => {
     ],
     company: [
       { name: "About", hash: "#about" },
+      { name: "FAQ", path: "/faq" },
       { name: "Contact", hash: "#contact" },
       { name: "Process", hash: "#process" },
     ],
@@ -123,12 +124,21 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <button
-                    onClick={() => handleCompanyClick(link.hash)}
-                    className="text-sm text-primary-foreground/60 hover:text-accent transition-colors text-left"
-                  >
-                    {link.name}
-                  </button>
+                  {link.path ? (
+                    <button
+                      onClick={() => handleLegalClick(link.path)}
+                      className="text-sm text-primary-foreground/60 hover:text-accent transition-colors text-left"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => handleCompanyClick(link.hash)}
+                      className="text-sm text-primary-foreground/60 hover:text-accent transition-colors text-left"
+                    >
+                      {link.name}
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>

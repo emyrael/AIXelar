@@ -263,6 +263,20 @@ const ChatWidget = () => {
       return `We integrate with:\n• n8n, Zapier, Make\n• WhatsApp APIs\n• Google Workspace, Microsoft tools\n• Shopify, WooCommerce, Stripe\n• CRMs (HubSpot, Pipedrive, Salesforce)\n• Data platforms (Databricks, Snowflake, Supabase)\n• And any tool with APIs or webhooks\n\nWhat tools does your business currently use?`;
     }
 
+    // Security and portal questions
+    if (lowerMessage.includes("security") || lowerMessage.includes("privacy") || lowerMessage.includes("encryption") || lowerMessage.includes("protect") || lowerMessage.includes("secure")) {
+      return `Xelar implements enterprise-grade security:\n\n• Encrypted data in transit (HTTPS/TLS)\n• Encrypted data at rest (database encryption)\n• Role-based access control (RBAC)\n• Optional SSO and MFA\n• Complete audit logs\n• Client-controlled data retention\n\nWe can build secure portals as an alternative to WhatsApp/webhooks. Would you like to learn more about secure portal options?`;
+    }
+
+    if (lowerMessage.includes("portal") || lowerMessage.includes("dashboard") || lowerMessage.includes("login") || lowerMessage.includes("access control") || lowerMessage.includes("rbac")) {
+      return `Yes! Xelar can build secure client portals with:\n\n• Private URL access\n• Upload and approve data pulls\n• Trigger workflows on-demand\n• View real-time KPIs and dashboards\n• Download reports\n• Role-based access control (RBAC)\n• Optional SSO/MFA\n• Complete audit logs\n\nPortals are ideal when you need governance, team collaboration, and controlled access. What's your main use case?`;
+    }
+
+    // Generic AI tools comparison
+    if (lowerMessage.includes("chatgpt") || lowerMessage.includes("claude") || lowerMessage.includes("perplexity") || lowerMessage.includes("upload data") || lowerMessage.includes("why not") || lowerMessage.includes("different from")) {
+      return `Great question! Tools like ChatGPT, Claude, Perplexity, and others are excellent for one-off questions. Xelar builds always-connected systems for ongoing business operations:\n\n• Live data connections that update automatically\n• Role-based access control and audit logs\n• Repeatable workflows with consistent results\n• Client-controlled data retention\n• Team collaboration with multiple users and roles\n\nXelar provides governance, security, and repeatability for ongoing operations. What's your main need - one-off questions or ongoing business operations?`;
+    }
+
     // General help
     return `I understand you're interested in AI and automation for your business. To give you the most relevant recommendations, could you tell me:\n\n1. What industry are you in?\n2. What's your biggest operational challenge?\n3. What tools do you currently use?\n\nOr, if you'd prefer, you can book a free 30-minute AI Strategy Call with Emmanuel to get personalized recommendations: ${CALENDLY_LINK}`;
   };
@@ -318,6 +332,48 @@ const ChatWidget = () => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSend();
+    }
+  };
+
+  const handleQuickAction = async (suggestion: string) => {
+    if (isTyping) return;
+    
+    const userMessage: Message = {
+      id: Date.now().toString(),
+      text: suggestion,
+      sender: "user",
+      timestamp: new Date(),
+    };
+
+    const updatedMessages = [...messages, userMessage];
+    setMessages(updatedMessages);
+    setIsTyping(true);
+    setError(null);
+
+    try {
+      const response = await generateResponse(suggestion, updatedMessages);
+      
+      const assistantMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        text: response,
+        sender: "assistant",
+        timestamp: new Date(),
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
+    } catch (err) {
+      console.error("Error generating response:", err);
+      setError("Sorry, I'm having trouble processing your request. Please try again or book a call with Emmanuel.");
+      
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        text: "I apologize, but I'm experiencing technical difficulties. Would you like to book a call with Emmanuel to discuss your needs directly?",
+        sender: "assistant",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setIsTyping(false);
     }
   };
 
@@ -425,6 +481,31 @@ const ChatWidget = () => {
             )}
             <div ref={messagesEndRef} />
           </div>
+
+          {/* Quick Actions */}
+          {messages.length === 1 && (
+            <div className="px-4 pt-2 pb-2 border-t border-border/50">
+              <p className="text-xs text-muted-foreground mb-2">Quick questions:</p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Show me a secure portal example",
+                  "How do you protect my data?",
+                  "How is Xelar different?",
+                  "What's the delivery timeline?",
+                  "Talk to an expert"
+                ].map((suggestion) => (
+                  <button
+                    key={suggestion}
+                    onClick={() => handleQuickAction(suggestion)}
+                    className="text-xs px-3 py-1.5 rounded-full bg-secondary hover:bg-secondary/80 text-foreground transition-colors"
+                    disabled={isTyping}
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Input */}
           <div className="p-4 border-t border-border/50">
