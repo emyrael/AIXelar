@@ -1,23 +1,35 @@
-import { Search, Hammer, Rocket } from "lucide-react";
+import { ChartNoAxesCombined, Hammer, Map, Rocket, Search } from "lucide-react";
 
 const steps = [
   {
     number: "01",
     icon: Search,
-    title: "Strategy & Discovery",
-    description: "We analyze your workflows, identify automation opportunities, and create a tailored AI roadmap.",
+    title: "Discover",
+    description: "We learn your business, users, workflows, and pain points.",
   },
   {
     number: "02",
-    icon: Hammer,
-    title: "Build & Implement",
-    description: "Our team develops custom AI solutions with rapid iteration and continuous feedback loops.",
+    icon: Map,
+    title: "Design",
+    description: "We map the right solution before writing code.",
   },
   {
     number: "03",
+    icon: Hammer,
+    title: "Build",
+    description: "We develop secure, scalable, and modern software systems.",
+  },
+  {
+    number: "04",
     icon: Rocket,
-    title: "Deploy & Support",
-    description: "Seamless deployment with ongoing maintenance, monitoring, and optimization support.",
+    title: "Launch",
+    description: "We deploy, test, and support your solution in the real world.",
+  },
+  {
+    number: "05",
+    icon: ChartNoAxesCombined,
+    title: "Improve",
+    description: "We use feedback and data to continuously improve the product.",
   },
 ];
 
@@ -33,27 +45,30 @@ const ProcessSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Process</span>
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Approach</span>
           <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6">
-            From Idea to Impact in 3 Steps
+            How We Build
           </h2>
           <p className="text-lg text-primary-foreground/70">
-            A proven methodology that delivers results fast.
+            A practical delivery model for turning operational insight into software that works in the real world.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5 max-w-6xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {/* Connector Line */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-accent/50 to-accent/10" />
+                <div className="hidden md:block absolute top-10 left-1/2 w-full h-0.5 bg-gradient-to-r from-accent/50 to-accent/10" />
               )}
               
-              <div className="relative p-8 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-5xl font-bold text-accent/30">{step.number}</span>
-                  <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center">
+              <div
+                className="relative h-full rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-accent/40 hover:bg-primary-foreground/10"
+                style={{ animationDelay: `${index * 90}ms` }}
+              >
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="text-3xl font-bold text-accent/30">{step.number}</span>
+                  <div className="w-11 h-11 rounded-xl bg-accent flex items-center justify-center">
                     <step.icon className="w-6 h-6 text-accent-foreground" />
                   </div>
                 </div>

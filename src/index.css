@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -160,6 +160,111 @@
     background-image: radial-gradient(circle at 1px 1px, hsl(var(--muted-foreground) / 0.15) 1px, transparent 0);
     background-size: 40px 40px;
   }
+
+  .tech-grid {
+    background-image:
+      linear-gradient(hsl(var(--accent) / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--accent) / 0.08) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, transparent, black 18%, black 72%, transparent);
+  }
+
+  .hero-interface-card {
+    position: relative;
+    isolation: isolate;
+    animation: hero-card-float 8s ease-in-out infinite;
+  }
+
+  .hero-interface-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    padding: 1px;
+    border-radius: inherit;
+    background:
+      linear-gradient(115deg, transparent 18%, hsl(var(--accent) / 0.55), transparent 42%),
+      linear-gradient(135deg, hsl(var(--accent) / 0.28), hsl(var(--primary) / 0.18), hsl(var(--accent) / 0.18));
+    background-size: 240% 240%, 100% 100%;
+    filter: drop-shadow(0 0 22px hsl(var(--accent) / 0.24));
+    animation: hero-border-glow 5.6s ease-in-out infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .hero-interface-surface {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-interface-surface::before {
+    content: '';
+    position: absolute;
+    inset: -40%;
+    pointer-events: none;
+    background: linear-gradient(115deg, transparent 38%, hsl(var(--accent) / 0.16) 48%, hsl(var(--primary) / 0.08) 52%, transparent 64%);
+    transform: translateX(-42%) rotate(8deg);
+    animation: hero-light-sweep 7.5s ease-in-out infinite;
+  }
+
+  .hero-interface-surface > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-interface-row {
+    position: relative;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: hero-row-enter 0.7s ease-out forwards;
+  }
+
+  .hero-status-dot {
+    position: relative;
+    animation: hero-status-pulse 2.4s ease-in-out infinite;
+  }
+
+  .hero-status-dot::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 999px;
+    border: 1px solid hsl(var(--accent) / 0.24);
+    animation: hero-dot-ring 2.4s ease-out infinite;
+  }
+
+  .hero-data-flow {
+    position: absolute;
+    bottom: 48px;
+    left: 30px;
+    top: 48px;
+    z-index: 0;
+    width: 1px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, transparent, hsl(var(--accent) / 0.2), transparent);
+  }
+
+  .hero-data-flow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -40%;
+    height: 42%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, hsl(var(--accent) / 0.9), transparent);
+    box-shadow: 0 0 14px hsl(var(--accent) / 0.7);
+    animation: hero-data-flow 3.4s ease-in-out infinite;
+  }
+
+  .hero-metric-cycle span {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: hero-metric-cycle 7.2s ease-in-out infinite;
+  }
 }
 
 @layer utilities {
@@ -189,12 +294,116 @@
     opacity: 0;
   }
 
+  .animate-scan-y {
+    animation: scan-y 8s ease-in-out infinite;
+  }
+
+  .animate-scan-y-delayed {
+    animation: scan-y 9s ease-in-out infinite 1.5s;
+  }
+
   @keyframes float {
     0%, 100% {
       transform: translateY(0px);
     }
     50% {
       transform: translateY(-20px);
+    }
+  }
+
+  @keyframes hero-card-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes hero-border-glow {
+    0%, 100% {
+      background-position: 0% 50%, 0 0;
+      opacity: 0.78;
+    }
+    50% {
+      background-position: 100% 50%, 0 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes hero-light-sweep {
+    0%, 18% {
+      transform: translateX(-48%) rotate(8deg);
+      opacity: 0;
+    }
+    45%, 62% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(48%) rotate(8deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes hero-row-enter {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes hero-status-pulse {
+    0%, 100% {
+      opacity: 0.65;
+      transform: scale(0.92);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.08);
+    }
+  }
+
+  @keyframes hero-dot-ring {
+    0% {
+      opacity: 0.65;
+      transform: scale(0.65);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.8);
+    }
+  }
+
+  @keyframes hero-data-flow {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    20%, 80% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(330%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes hero-metric-cycle {
+    0%, 8% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    14%, 28% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    34%, 100% {
+      opacity: 0;
+      transform: translateY(-12px);
     }
   }
 
@@ -218,6 +427,17 @@
     }
   }
 
+  @keyframes scan-y {
+    0%, 100% {
+      transform: translateY(-28px);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(36px);
+      opacity: 0.85;
+    }
+  }
+
   @keyframes scroll-infinite {
     0% {
       transform: translateX(0);
@@ -235,5 +455,33 @@
 
   .animate-scroll-infinite:hover {
     animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-float-delayed,
+    .animate-pulse-slow,
+    .animate-gradient,
+    .animate-fade-up,
+    .animate-fade-up-delayed,
+    .animate-scan-y,
+    .animate-scan-y-delayed,
+    .animate-scroll-infinite,
+    .hero-interface-card,
+    .hero-interface-card::before,
+    .hero-interface-surface::before,
+    .hero-interface-row,
+    .hero-status-dot,
+    .hero-status-dot::after,
+    .hero-data-flow::after,
+    .hero-metric-cycle span {
+      animation: none;
+    }
+
+    .hero-interface-row,
+    .hero-metric-cycle span:first-child {
+      opacity: 1;
+      transform: none;
+    }
   }
 }

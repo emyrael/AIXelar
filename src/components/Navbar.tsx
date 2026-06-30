@@ -66,6 +66,7 @@ const Navbar = () => {
   const navLinks: NavLink[] = [
     { name: "Home", path: "/" },
     { name: "Solutions", hash: "#solutions" },
+    { name: "Work", hash: "#products" },
     { name: "Process", hash: "#process" },
     { name: "Contact", hash: "#contact" },
     { name: "About", path: "/about" },
@@ -80,7 +81,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex flex-col">
           <span className="text-2xl font-bold">
-            <span className="text-accent">Xelar</span>
+            <span className="text-accent">AIXELAR</span>
           </span>
           {isScrolled && (
             <span className="text-xs text-muted-foreground font-medium mt-0.5">Accelerate With Intelligence</span>

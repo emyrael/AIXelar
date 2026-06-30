@@ -1,20 +1,20 @@
-import { Zap, Code2, Shield, Headphones, CheckCircle } from "lucide-react";
+import { Zap, Code2, Shield, Headphones, CheckCircle, Boxes, Bot, Cloud, Database } from "lucide-react";
 
 const reasons = [
   {
     icon: Code2,
     title: "Custom-Built AI Solutions",
-    description: "Intelligent automation, AI agents, workflow systems, and optimisation tools engineered specifically for your business, no off-the-shelf templates.",
+    description: "Intelligent automation, AI agents, workflow systems, and optimization tools engineered specifically for your business, with no off-the-shelf templates.",
   },
   {
     icon: Zap,
-    title: "Fast Delivery",
-    description: "Average delivery of 14 days depending on project specification. Rapid deployment without compromising quality or security.",
+    title: "Fast, Focused Delivery",
+    description: "Lean discovery, sharp scope, and rapid iteration help you move from idea to usable product without losing quality or security.",
   },
   {
     icon: CheckCircle,
     title: "Enterprise-Grade Engineering",
-    description: "Deep technical expertise from Top Tech Companies like Accenture, Invisible Technologies and Airbus. Production-ready AI systems built with industry best practices.",
+    description: "Production-ready AI systems built with modern engineering practices, secure architecture, and maintainable foundations.",
   },
   {
     icon: Shield,
@@ -24,8 +24,17 @@ const reasons = [
   {
     icon: Headphones,
     title: "Strategic AI Consulting",
-    description: "Beyond implementation we deliver strategic guidance on automation, competitor analysis, website optimisation, and process optimisation.",
+    description: "Beyond implementation, we deliver strategic guidance on automation, competitor analysis, website optimization, and process improvement.",
   },
+];
+
+const proofAreas = [
+  { icon: Bot, label: "AI Products Built" },
+  { icon: Code2, label: "Web & Mobile Solutions" },
+  { icon: Boxes, label: "Automation Systems" },
+  { icon: Database, label: "Enterprise Data Experience" },
+  { icon: Cloud, label: "Cloud & Scalable Architecture" },
+  { icon: CheckCircle, label: "Product Thinking + Engineering Execution" },
 ];
 
 const WhyUsSection = () => {
@@ -38,10 +47,10 @@ const WhyUsSection = () => {
             <div>
               <span className="text-accent font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-                Enterprise AI Solutions Built for Scale
+                Serious AI Solutions Built for Scale
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Xelar delivers intelligent automation, AI agents, workflow systems, and secure portals that transform how your business operates. We build custom solutions from secure client portals and automated reporting to data engineering and competitor analysis, all designed to integrate seamlessly with your existing infrastructure.
+                We don't just write code. We discover and learn how your business works, understand your workflows, identify bottlenecks, and build intelligent systems that help you move faster, operate smarter, and scale better.
               </p>
               
               <div className="space-y-4">
@@ -61,30 +70,21 @@ const WhyUsSection = () => {
 
             {/* Right Visual */}
             <div className="relative">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/5 via-accent/10 to-primary/5 border border-border/50 p-8 relative overflow-hidden">
-                {/* Stats Grid */}
-                <div className="grid grid-cols-2 gap-6 h-full">
-                  <div className="flex flex-col justify-center items-center p-6 rounded-2xl bg-card border border-border/50">
-                    <span className="text-4xl font-bold text-accent">20+</span>
-                    <span className="text-sm text-muted-foreground mt-2">Projects Delivered</span>
-                  </div>
-                  <div className="flex flex-col justify-center items-center p-6 rounded-2xl bg-card border border-border/50">
-                    <span className="text-4xl font-bold text-accent">98%</span>
-                    <span className="text-sm text-muted-foreground mt-2">Client Satisfaction</span>
-                  </div>
-                  <div className="flex flex-col justify-center items-center p-6 rounded-2xl bg-card border border-border/50">
-                    <span className="text-4xl font-bold text-accent">14</span>
-                    <span className="text-sm text-muted-foreground mt-2">Avg. Delivery Days</span>
-                  </div>
-                  <div className="flex flex-col justify-center items-center p-6 rounded-2xl bg-card border border-border/50">
-                    <span className="text-4xl font-bold text-accent">24/7</span>
-                    <span className="text-sm text-muted-foreground mt-2">Support Available</span>
-                  </div>
+              <div className="relative overflow-hidden rounded-3xl border border-border/50 bg-gradient-to-br from-primary/5 via-accent/10 to-primary/5 p-5 sm:p-8">
+                <div className="absolute inset-0 tech-grid opacity-30" />
+                <div className="relative z-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {proofAreas.map((area) => (
+                    <div
+                      key={area.label}
+                      className="group flex flex-col justify-between rounded-2xl border border-border/50 bg-card/85 p-5 shadow-soft backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-card"
+                    >
+                      <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 transition-colors group-hover:bg-accent">
+                        <area.icon className="h-5 w-5 text-accent transition-colors group-hover:text-accent-foreground" />
+                      </div>
+                      <span className="text-sm font-semibold leading-snug text-foreground">{area.label}</span>
+                    </div>
+                  ))}
                 </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
-                <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
               </div>
             </div>
           </div>

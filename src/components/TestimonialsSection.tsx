@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
@@ -57,20 +57,21 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="p-8 rounded-2xl bg-card border border-border/50 card-hover"
+              className="group relative overflow-hidden rounded-2xl border border-border/50 bg-card p-8 shadow-soft transition-all duration-500 hover:-translate-y-1 hover:border-accent/30 hover:shadow-card"
             >
+              <Quote className="absolute right-6 top-6 h-10 w-10 text-accent/10 transition-colors group-hover:text-accent/20" />
               {/* Rating */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-4 relative z-10">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-accent text-accent" />
                 ))}
               </div>
 
               {/* Content */}
-              <p className="text-foreground mb-6 leading-relaxed">"{testimonial.content}"</p>
+              <p className="relative z-10 text-foreground mb-6 leading-relaxed">"{testimonial.content}"</p>
 
               {/* Author */}
-              <div className="flex items-center gap-4">
+              <div className="relative z-10 flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
                   <span className="text-lg font-bold text-accent">
                     {testimonial.name.charAt(0)}
