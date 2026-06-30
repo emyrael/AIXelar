@@ -1,123 +1,133 @@
-# Engagement Model
-# Xelar Engagement Model
+# AIXELAR Engagement Model
 
-This explains how Xelar works with clients from first contact to delivery.
+AIXELAR works consultatively. The chatbot should avoid sounding pushy or salesy. It should first understand the business, then recommend possible solutions.
 
----
+## Core Approach
 
-## 1. Discovery & AI Roadmap Call (Primary CTA)
-A 30-minute session where we:
-- Learn about the business
-- Understand the current tools
+Every project follows five phases:
+
+1. Discovery
+   - Learn the business, users, workflows, pain points, tools, data sources, and goals.
+
+2. Strategy
+   - Design the right technical solution before writing code.
+
+3. Build
+   - Develop secure, scalable, and maintainable software systems.
+
+4. Launch
+   - Deploy, test, document, and support the solution in the real world.
+
+5. Improve
+   - Use feedback and data to continuously improve the product or workflow.
+
+## Discovery and Roadmap Call
+
+The primary call to action is a 30-minute discovery or roadmap call.
+
+In this call, AIXELAR can:
+
+- Learn the client's business model
+- Understand current tools and workflows
 - Identify bottlenecks
-- Determine goals
-- Suggest 2–3 automation opportunities
-- Estimate timeframes
-- Build a mini roadmap
+- Clarify goals and KPIs
+- Suggest 2-3 practical automation or software opportunities
+- Estimate effort and timeline ranges
+- Outline a mini roadmap
 
-This is the best way for businesses to begin with Xelar.
+The chatbot should suggest this call only after it has provided useful context or asked relevant questions, unless the user directly asks to book.
 
----
+## Business Process Audit
 
-## 2. Business Process Audit
-We review:
+For deeper projects, AIXELAR may review:
+
 - Current workflows
-- Data sources
 - Software tools
+- Data sources
 - Manual tasks
+- Approval steps
 - Communication channels
 - Reporting needs
+- Security and access requirements
 
-Deliverable:
-- Clear automation & AI adoption plan.
+Deliverable: a clear AI, automation, app, or data adoption plan.
 
----
+## Implementation Phase
 
-## 3. Implementation Phase
-We build:
-- n8n/Zapier/Make workflows
-- Automation scripts
-- AI assistants / RAG systems
+AIXELAR can build:
+
+- AI-powered applications
+- Web apps and mobile apps
+- SaaS platforms
+- AI assistants and RAG systems
+- Workflow automations
 - Data pipelines
 - Dashboards
+- Secure portals
+- API integrations
+- Reporting and monitoring systems
 
-Most implementations take between 1–8 weeks.
+## Timeline Guidance
 
----
+Timelines depend on complexity, integrations, security requirements, and feedback cycles.
 
-## 4. Testing & Optimization
-We test each workflow:
-- Error handling
-- Data accuracy
-- User experience
-- Scalability
+Typical ranges:
 
-We refine the flows until stable.
+- Small workflow automation: 1-5 days
+- Medium automation or integration: 1-2 weeks
+- AI assistant or chatbot: 1-3 weeks
+- Data pipeline or dashboard: 2-8 weeks
+- Secure portal MVP: 2-6 weeks
+- Complete product or multi-system rollout: 6-12+ weeks
 
----
+These are estimates, not guarantees. The chatbot should explain that AIXELAR gives realistic timelines after discovery.
 
-## 5. Handover or Ongoing Support
-Options:
-- Full documentation & handover
-- Ongoing support retainer
-- Continuous automation expansion
+## Delivery and Ownership
 
----
+Typical delivery phases:
 
-## 6. Delivery + Ownership
+1. Discovery workshop: 1-2 days
+2. Roadmap and technical plan: 3-5 days
+3. MVP build: 2-6 weeks depending on scope
+4. Iteration: 1-4 weeks
+5. Launch: around 1 week
+6. Optional support: ongoing
 
-**Delivery Phases:**
+Deliverables may include:
 
-1. **Discovery Workshop** (1-2 days)
-   - Deep dive into business processes
-   - Identify data sources and tools
-   - Define goals and success metrics
-   - Map out automation opportunities
+- Working software or automation
+- Documentation
+- Deployment support
+- Training or handover
+- Monitoring plan
+- Optional support retainer
 
-2. **Roadmap** (3-5 days)
-   - Create detailed implementation plan
-   - Prioritize workflows and features
-   - Estimate effort and timelines
-   - Define security and access requirements
+## Pricing
 
-3. **MVP Build** (2-6 weeks, depending on complexity)
-   - Build core workflows and integrations
-   - Implement basic portal (if required)
-   - Set up authentication and access control
-   - Create initial reports and dashboards
+AIXELAR does not use fixed template pricing for custom work. Pricing is scope-based.
 
-4. **Iterate** (1-4 weeks)
-   - Gather feedback from stakeholders
-   - Refine workflows and features
-   - Add additional integrations
-   - Enhance security and governance
+Pricing depends on:
 
-5. **Launch** (1 week)
-   - Final testing and validation
-   - User training and documentation
-   - Go-live support
-   - Handover to client
+- Type of product, automation, or system
+- Number of integrations
+- Number of workflows
+- Data complexity
+- Security and access requirements
+- Whether mobile apps, portals, dashboards, or AI assistants are needed
+- Support requirements
 
-6. **Support** (Ongoing, optional)
-   - Monitoring and maintenance
-   - Bug fixes and improvements
-   - Adding new features
-   - Performance optimization
+The chatbot should avoid quoting a price without discovery. It can say that AIXELAR provides a custom estimate after understanding the business and the desired outcome.
 
-**Timeline Ranges:**
-- **MVP:** ~2-6 weeks depending on integrations and complexity
-- **Full Rollout:** ~6-12+ weeks for comprehensive systems with multiple workflows, portals, and integrations
+## Consultative Conversation Style
 
-**Important:** Timelines depend on:
-- Data access and API availability
-- Complexity of integrations required
-- Security and compliance requirements
-- Number of workflows and features
-- Client feedback cycles
+If someone asks, "What can AIXELAR build?", the chatbot should answer briefly and then ask a useful question.
 
-**Pricing:** All projects are scope-based. We provide detailed estimates after the discovery workshop and roadmap phase. No fixed pricing—each project is customized to your needs.
+Good questions:
 
----
+- "What industry are you in?"
+- "What process would you like to improve?"
+- "What are the biggest operational challenges your business currently faces?"
+- "Which tools does your team already use?"
+- "Are you trying to build a customer-facing product, internal tool, automation, dashboard, or AI assistant?"
 
-This model keeps projects simple, predictable, and outcome-driven.
-
+The assistant should recommend solutions only after gathering enough context, unless the user's question is clearly asking for general capability information.

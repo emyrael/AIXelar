@@ -1,126 +1,202 @@
-# Example Workflows
-# Example Workflows
+# Example Workflows and Systems
 
-Below are real-world workflow examples used to educate customers on what Xelar can build.
+These examples help the chatbot explain what AIXELAR can build in practical terms. The assistant should tailor examples to the user's industry and problem instead of listing everything.
 
----
+## Lead Follow-Up Automation
 
-## 1. WhatsApp Lead Follow-Up Flow (n8n)
 Trigger:
-- User submits a form on website or landing page.
+
+- A user submits a website form, ad form, or landing-page inquiry.
 
 Flow:
-1. Capture form data → save to CRM or Google Sheets.
-2. Send WhatsApp welcome message.
-3. If no reply after 24 hours → send follow-up reminder.
-4. Notify business owner with summary.
-5. Record conversation status for analytics.
 
----
+1. Capture the lead.
+2. Save the lead to CRM or database.
+3. Send a WhatsApp, email, or SMS welcome message.
+4. Create a follow-up task.
+5. If there is no reply after a defined time, send a reminder.
+6. Notify the business owner or sales team.
+7. Track lead status in a dashboard.
 
-## 2. Daily Sales Summary
+Useful for:
+
+- Car dealerships
+- Real estate
+- Agencies
+- Service businesses
+- B2B sales teams
+
+## Daily Sales and Operations Summary
+
 Trigger:
-- Scheduled every evening.
+
+- Scheduled daily, weekly, or monthly.
 
 Flow:
-- Pull data from Shopify, WooCommerce, Stripe, or custom DB.
-- Clean and format data.
-- Calculate revenue, profit, top-selling products, returning customers.
-- Send summary to owner via WhatsApp or email.
-- Save report to Google Drive or Notion.
 
----
+1. Pull data from Shopify, WooCommerce, Stripe, POS, CRM, ads platforms, or a custom database.
+2. Clean and format the data.
+3. Calculate revenue, profit, conversions, top products, returning customers, and operational KPIs.
+4. Generate a summary report.
+5. Send the report by email, WhatsApp, portal, or dashboard.
+6. Save a snapshot for historical tracking.
 
-## 3. Inventory Low-Stock Alert
+Useful for:
+
+- Retail and e-commerce
+- Agencies
+- Leadership teams
+- Finance and operations teams
+
+## Inventory and Supplier Automation
+
 Trigger:
-- Product quantity drops below threshold.
+
+- Product quantity drops below a threshold or a scheduled inventory check runs.
 
 Flow:
-- Pull inventory from POS or e-commerce store.
-- Evaluate threshold.
-- Send notification to purchasing team.
-- Auto-generate supplier email.
-- Update dashboard.
 
----
+1. Pull inventory from POS, warehouse, e-commerce platform, or spreadsheet.
+2. Compare against reorder thresholds.
+3. Notify the purchasing team.
+4. Generate a supplier email or purchase request.
+5. Update a dashboard.
+6. Track reorder status.
 
-## 4. Marketing Agency Automated Reporting
+Useful for:
+
+- Retail
+- E-commerce
+- Automotive
+- Logistics
+
+## Client Reporting Portal
+
+Trigger:
+
+- Scheduled report, manual portal trigger, or new data source update.
+
 Flow:
-- Fetch Google Ads, Meta Ads, TikTok Ads performance.
-- Merge with client-specific KPIs.
-- Format into a weekly report.
-- Email or WhatsApp to clients automatically.
-- Store snapshot in Google Drive.
 
----
+1. Pull data from approved sources.
+2. Validate and normalize data.
+3. Calculate KPIs using agreed business rules.
+4. Generate charts, summaries, and downloadable reports.
+5. Publish to a secure portal based on user permissions.
+6. Send alerts or notifications.
+7. Record audit logs for access and downloads.
 
-## 5. Appointment Scheduling Automation
+Security options:
+
+- Login and authentication
+- Role-based access control
+- Optional SSO and MFA
+- Encrypted storage where required
+- Audit logs
+
+Useful for:
+
+- Agencies
+- Enterprise teams
+- Operations teams
+- Client-facing reporting businesses
+
+## AI Knowledge Assistant
+
+Trigger:
+
+- A customer or employee asks a question.
+
 Flow:
-- Sync Calendly / booking form submissions.
-- Send reminders.
-- Auto-reschedule or notify staff if conflicts occur.
 
----
+1. Search approved company documents, FAQs, SOPs, policies, or knowledge base content.
+2. Retrieve the most relevant context.
+3. Generate a concise answer.
+4. Provide next steps or escalation when needed.
+5. Log unresolved questions for improvement.
 
-## 6. Secure Portal Reporting Workflow
+Useful for:
 
-This workflow demonstrates how data flows through a secure portal system with proper governance.
+- Customer support
+- Internal operations
+- HR and onboarding
+- Sales enablement
+- Technical support
 
-**Trigger:**
-- Scheduled (daily/weekly/monthly) OR
-- Manual trigger from portal OR
-- Data source update detected
+## Mobile App or SaaS Platform Build
 
-**Flow:**
-1. **Data Source → Ingestion/Validation**
-   - Pull data from source systems (Shopify, POS, CRM, ads platforms, etc.)
-   - Validate data quality and completeness
-   - Handle errors and retries
+Trigger:
 
-2. **KPI Computation**
-   - Calculate business KPIs (revenue, profit, conversion rates, etc.)
-   - Apply business rules and formulas
-   - Aggregate data across sources
+- A business needs a customer-facing app, internal platform, or SaaS product.
 
-3. **Report Generation**
-   - Format data into reports (tables, charts, summaries)
-   - Generate PDF, Excel, or CSV exports
-   - Prepare dashboard visualizations
+Flow:
 
-4. **Optional Approval Step**
-   - Route report to approver (if configured)
-   - Track approval status
-   - Log approval actions in audit trail
+1. Discover users, workflows, and goals.
+2. Define MVP scope.
+3. Design the app architecture.
+4. Build frontend, backend, database, and integrations.
+5. Add AI features, dashboards, notifications, or automation where useful.
+6. Test and deploy.
+7. Improve based on real usage.
 
-5. **Portal Display**
-   - Publish report to secure portal
-   - Make available to authorized users based on RBAC
-   - Update real-time dashboards
+Useful for:
 
-6. **Optional Alerts**
-   - Send email notifications to stakeholders
-   - Send WhatsApp alerts (if configured)
-   - Trigger additional workflows based on thresholds
+- Startups
+- Product teams
+- SMEs launching new services
+- Businesses replacing manual processes with software
 
-7. **Audit Logging**
-   - Record all actions (data pulls, report generation, access, exports)
-   - Track who accessed what and when
-   - Maintain compliance trail
+## Market Intelligence and Competitor Monitoring
 
-**Security Features:**
-- Encrypted data connections from source systems
-- Encrypted storage of processed data
-- Role-based access control (only authorized users see reports)
-- Audit logs for all actions
-- Optional approval workflows before publishing
+Trigger:
 
-**Example Use Cases:**
-- Daily sales reports for retail businesses
-- Weekly marketing performance for agencies
-- Monthly financial summaries for executives
-- Real-time inventory dashboards for operations teams
+- Scheduled monthly, weekly, or on demand.
 
----
+Flow:
 
-These workflows help businesses understand practical applications of automation.
+1. Collect market or competitor data from approved sources.
+2. Normalize findings.
+3. Track pricing, positioning, offers, content, or product changes.
+4. Summarize key insights.
+5. Publish to a dashboard or send a newsletter.
+6. Alert the team when meaningful changes appear.
 
+Useful for:
+
+- E-commerce
+- Agencies
+- Real estate
+- Automotive
+- SaaS teams
+
+## Appointment and Scheduling Automation
+
+Trigger:
+
+- A user books, cancels, or changes an appointment.
+
+Flow:
+
+1. Sync booking form or Calendly submissions.
+2. Add details to calendar or CRM.
+3. Send reminders.
+4. Notify staff.
+5. Handle reschedule logic or conflicts.
+6. Update dashboard or reporting.
+
+Useful for:
+
+- Clinics
+- Service businesses
+- Dealerships
+- Real estate
+- Consultancies
+
+## How the Chatbot Should Talk About Workflows
+
+When users ask "Can you automate this?", the chatbot should:
+
+1. Acknowledge the workflow.
+2. Ask what tools or data sources they currently use.
+3. Explain a practical flow in plain language.
+4. Mention that AIXELAR can start with discovery and build around their real process.

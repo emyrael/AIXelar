@@ -60,18 +60,18 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-primary text-primary-foreground pt-10 pb-6 md:pt-16 md:pb-8">
+      <div className="container mx-auto px-5 sm:px-6">
+        <div className="grid grid-cols-2 gap-7 mb-8 md:grid-cols-2 md:gap-12 md:mb-12 lg:grid-cols-4">
           {/* Brand */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <a href="#" className="text-2xl font-bold">
               <span className="text-accent">Xelar</span>
             </a>
-            <p className="mt-4 text-primary-foreground/60 text-sm leading-relaxed">
+            <p className="mt-3 text-primary-foreground/60 text-sm leading-relaxed md:mt-4">
               Custom AI solutions for businesses ready to scale. From chatbots to full automation systems.
             </p>
-            <div className="mt-4 mb-6">
+            <div className="mt-3 mb-4 md:mt-4 md:mb-6">
               <a
                 href="mailto:info@aixelar.io"
                 className="text-sm text-primary-foreground/60 hover:text-accent transition-colors flex items-center gap-2"
@@ -106,8 +106,8 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-3">
+            <h4 className="font-semibold mb-3 md:mb-4">Services</h4>
+            <ul className="space-y-2 md:space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <span className="text-sm text-primary-foreground/60">
@@ -120,8 +120,8 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-3">
+            <h4 className="font-semibold mb-3 md:mb-4">Company</h4>
+            <ul className="space-y-2 md:space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   {link.path ? (
@@ -146,8 +146,8 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-3">
+            <h4 className="font-semibold mb-3 md:mb-4">Legal</h4>
+            <ul className="space-y-2 md:space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <button
@@ -163,7 +163,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-5 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-2 md:pt-8 md:gap-4">
           <p className="text-sm text-primary-foreground/40">
             © {new Date().getFullYear()} Xelar. All rights reserved.
           </p>

@@ -39,25 +39,25 @@ const proofAreas = [
 
 const WhyUsSection = () => {
   return (
-    <section className="py-24 bg-secondary/30">
-      <div className="container mx-auto px-6">
+    <section className="py-14 bg-secondary/30 md:py-24">
+      <div className="container mx-auto px-5 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center lg:gap-16">
             {/* Left Content */}
             <div>
               <span className="text-accent font-semibold text-sm uppercase tracking-wider">Why Choose Us</span>
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
+              <h2 className="text-2xl md:text-5xl font-bold text-foreground mt-3 mb-4 md:mt-4 md:mb-6">
                 Serious AI Solutions Built for Scale
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-base text-muted-foreground mb-6 md:text-lg md:mb-8">
                 We don't just write code. We discover and learn how your business works, understand your workflows, identify bottlenecks, and build intelligent systems that help you move faster, operate smarter, and scale better.
               </p>
               
-              <div className="space-y-4">
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 md:gap-4">
                 {reasons.map((reason, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <reason.icon className="w-5 h-5 text-accent" />
+                  <div key={index} className="flex items-start gap-3 rounded-xl border border-border/40 bg-card/60 p-3 sm:bg-transparent sm:border-0 sm:p-0 md:gap-4">
+                    <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 md:w-10 md:h-10">
+                      <reason.icon className="w-4 h-4 text-accent md:w-5 md:h-5" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">{reason.title}</h4>
@@ -70,18 +70,18 @@ const WhyUsSection = () => {
 
             {/* Right Visual */}
             <div className="relative">
-              <div className="relative overflow-hidden rounded-3xl border border-border/50 bg-gradient-to-br from-primary/5 via-accent/10 to-primary/5 p-5 sm:p-8">
+              <div className="relative overflow-hidden rounded-3xl border border-border/50 bg-gradient-to-br from-primary/5 via-accent/10 to-primary/5 p-4 sm:p-8">
                 <div className="absolute inset-0 tech-grid opacity-30" />
-                <div className="relative z-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="relative z-10 grid grid-cols-2 gap-3 sm:gap-4">
                   {proofAreas.map((area) => (
                     <div
                       key={area.label}
-                      className="group flex flex-col justify-between rounded-2xl border border-border/50 bg-card/85 p-5 shadow-soft backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-card"
+                      className="group flex flex-col justify-between rounded-2xl border border-border/50 bg-card/85 p-4 shadow-soft backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-card md:p-5"
                     >
-                      <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 transition-colors group-hover:bg-accent">
-                        <area.icon className="h-5 w-5 text-accent transition-colors group-hover:text-accent-foreground" />
+                      <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 transition-colors group-hover:bg-accent md:mb-5 md:h-11 md:w-11">
+                        <area.icon className="h-4 w-4 text-accent transition-colors group-hover:text-accent-foreground md:h-5 md:w-5" />
                       </div>
-                      <span className="text-sm font-semibold leading-snug text-foreground">{area.label}</span>
+                      <span className="text-xs font-semibold leading-snug text-foreground md:text-sm">{area.label}</span>
                     </div>
                   ))}
                 </div>

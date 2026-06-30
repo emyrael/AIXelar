@@ -1,392 +1,218 @@
-# FAQ
-# Frequently Asked Questions (FAQ)
-
-This FAQ covers the most common questions users ask about Xelar, our services, pricing approach, implementation process, and AI capabilities.
-
----
-
-## GENERAL QUESTIONS
-
-### **What is Xelar and your mission?**
-Xelar is an AI Automation & Data Engineering consultancy that helps small and mid-sized businesses modernize their operations using practical, results-driven AI solutions.
-
-**Our Mission:** Xelar exists to make AI simple, practical, and impactful. We help businesses work smarter, reduce manual workload, increase revenue, and adopt automation without complexity.
-
-**What Makes Us Different:** We're not just chat—we build connected systems + automation. We focus on practical automation, not hype, and deliver fast implementations that integrate with tools businesses already use.
-
-### **What does Xelar do?**
-Xelar helps small and mid-sized businesses automate repetitive workflows, build AI assistants, improve business data pipelines, and streamline reporting.  
-We focus on practical results — reduced manual work, faster processes, and better decision-making.
-
-### **What problems do you solve?**
-We solve common business challenges:
-- **Manual, repetitive tasks** → Automated workflows
-- **Disconnected data sources** → Unified data pipelines and dashboards
-- **Slow reporting** → Automated, scheduled reports
-- **Lack of visibility** → Real-time KPIs and monitoring
-- **Security concerns** → Secure portals with access control
-- **Team collaboration** → Shared dashboards and approval workflows
-- **Data governance** → Audit trails and role-based access
-
-### **Do I need technical skills to work with Xelar?**
-No. Xelar handles all technical implementation, testing, and support.  
-You just describe your business process and what you want to achieve.
-
-### **What industries does Xelar support?**
-We support a wide range of industries. All we need to know is your challenge, and we can discuss how automation and AI can help solve it.
-
-Some examples of industries we've worked with include:
-- Retail & e-commerce  
-- Car dealerships  
-- Logistics & transportation  
-- Healthcare clinics (non-medical workflows)  
-- Marketing & digital agencies  
-- Real estate  
-
-If your industry isn't listed here, that's fine. We work with any business that has manual processes, repetitive tasks, or data challenges that could benefit from automation and AI solutions.
-
----
-
-## PRICING QUESTIONS
-
-### **How much does Xelar charge?**
-There is **no fixed price** because every project is different.  
-The cost depends on:
-- The type of automation or AI system  
-- The tools involved (n8n, Zapier, APIs, databases, etc.)  
-- The number of workflows or pipelines  
-- The complexity of your business processes  
-- Whether you need AI assistants, RAG systems, dashboards, or data pipelines  
-
-### **Can you give me an estimate?**
-Yes — but only after understanding:
-- Your industry  
-- The tools you use  
-- The problem you're trying to solve  
-- The workflows we need to build  
-
-This is why we recommend a **30-minute AI Strategy & Roadmap Call**, where we break down your needs and give you a realistic effort estimate.
-
-### **Do you offer subscription packages?**
-Not at the moment.  
-Because each business has unique workflows, pricing is based on **scope**, not templates.
-
-### **Do I need to pay upfront?**
-Payment terms are agreed upon during the roadmap discussion.  
-Simple workflows may require upfront payment; larger projects may have milestones.
-
-### **Do you charge for the roadmap call?**
-No. The AI Strategy Call is currently **free**, and it helps us understand your business and propose a tailored plan.
-
----
-
-## SERVICE QUESTIONS
-
-### **What tools do you integrate with?**
-We integrate with:
-- n8n, Zapier, Make  
-- WhatsApp APIs (Twilio, 360dialog)  
-- Google Workspace, Microsoft tools  
-- Shopify, WooCommerce, Stripe  
-- Databricks, Snowflake, Supabase, PostgreSQL  
-- CRMs like HubSpot, Pipedrive, Salesforce  
-- PowerBI, Tableau dashboards  
-And any tool that supports APIs or webhooks.
-
-### **Can you automate reporting?**
-Yes. This includes:
-- Daily sales reports  
-- Weekly marketing performance  
-- Inventory status  
-- KPI dashboards  
-- Custom multi-source analytics  
-
-### **Can you build AI chatbots for my website?**
-Yes — including:
-- Sales bots  
-- Support bots  
-- Internal assistants  
-- Knowledge-base Q&A tools  
-- RAG systems using your own documents  
-
-### **Do you create complete AI strategy plans?**
-Yes. The roadmap provides:
-- 30–90 day automation plan  
-- Workflow suggestions  
-- Cost/effort estimate  
-- Tools and integrations needed  
-- Business impact projection  
-
----
-
-## TIMELINE & IMPLEMENTATION
-
-### **How long does it take to build automations?**
-Timelines depend on complexity, integrations, and security requirements:
-
-**Typical Timelines:**
-- Small workflows: **1–5 days**
-- Medium workflows: **1–2 weeks**
-- AI assistants / chatbots: **1–3 weeks**
-- Data pipelines / dashboards: **2–8 weeks**
-- Secure portals with authentication: **2–6 weeks** (MVP)
-- Full system rollout: **6–12+ weeks** (comprehensive systems)
-
-**Factors Affecting Timeline:**
-- Number and complexity of integrations
-- Security and compliance requirements
-- Data access and API availability
-- Number of workflows and features
-- Client feedback cycles
-
-**Delivery Phases:**
-1. Discovery workshop (1-2 days)
-2. Roadmap (3-5 days)
-3. MVP build (2-6 weeks)
-4. Iterate (1-4 weeks)
-5. Launch (1 week)
-6. Support (ongoing, optional)
-
-We provide detailed timelines after the discovery workshop.
-
-### **How do we get started?**
-1. Discovery & AI Strategy Call  
-2. Process and tools evaluation  
-3. Workflow design  
-4. Implementation  
-5. Testing & optimization  
-6. Delivery or ongoing support  
-
-### **Can you work with my existing tools?**
-Yes. Most automations are built using the tools you already use.
-
----
-
-## AI & DATA QUESTIONS
-
-### **Do you train custom models?**
-We build custom LLM agents and RAG assistants, but we do *not* train large foundation models.  
-We focus on:
-- High-quality prompting  
-- Vector search  
-- Embeddings  
-- AI workflow design  
-- Assistant integration with your tech stack  
-
-### **Can the AI assistant help my customers directly?**
-Yes. We build:
-- Website chat widgets  
-- WhatsApp bots  
-- Email auto-responders  
-- Internal Q&A bots  
-
-### **Is my business data safe?**
-Yes. We implement multiple layers of security:
-
-**Data Protection:**
-- Encrypted data in transit (HTTPS/TLS for all connections)
-- Encrypted data at rest (database encryption)
-- Secure API connections to your systems
-- Credential management and secure key storage
-
-**Access Control:**
-- Role-based access control (RBAC) - who can see and do what
-- Optional Single Sign-On (SSO) and Multi-Factor Authentication (MFA)
-- User management and permission assignment
-- Session management and timeout controls
-
-**Data Governance:**
-- Audit logs tracking all access and actions
-- Data retention policies controlled by the client
-- No sensitive data stored without explicit consent
-
-**Data Ownership:**
-- Xelar does not resell or reuse client data
-- Client controls where data is stored (client environment vs secure hosted storage)
-- Client controls data retention policies
-
-### **Can you build a secure portal?**
-Yes! We can build secure client portals that provide a private, controlled interface for accessing automation and data.
-
-**Portal Features:**
-- Private URL (e.g., `/monitoring` or `portal.clientdomain.com`)
-- Upload and approve data pulls
-- Trigger workflows on-demand
-- View real-time KPIs and dashboards
-- Download reports (PDF, Excel, CSV)
-- Set custom alerts
-- Multi-user support with role-based access
-
-**Security:**
-- Authentication (login/password or SSO)
-- Role-based access control (RBAC)
-- Optional SSO/MFA
-- Encrypted connections and storage
-- Complete audit logs
-
-Portals are ideal when you need governance, team collaboration, and controlled access to sensitive business data.
-
-### **How do you secure client data (encryption, access control)?**
-We implement enterprise-grade security:
-
-**Encryption:**
-- All data in transit is encrypted using HTTPS/TLS
-- Data at rest is encrypted using database encryption
-- Secure API connections to client systems
-- Credential management with secure key storage
-
-**Access Control:**
-- Role-based access control (RBAC) - define who can see and do what
-- Optional Single Sign-On (SSO) integration
-- Multi-Factor Authentication (MFA) support
-- User management and permission assignment
-- Session management and timeout controls
-
-**Audit & Compliance:**
-- Complete audit logs tracking all access and actions
-- Data retention policies controlled by the client
-- Compliance-ready logging and reporting
-
-### **Where is the data stored?**
-Data storage depends on the project and client preferences:
-
-**Options:**
-- **Client Environment:** Data stored in client's own infrastructure (on-premises or client cloud)
-- **Secure Hosted Storage:** Data stored in secure cloud infrastructure with encryption
-- **Hybrid:** Some data in client environment, some in secure hosted storage
-
-**Typical Implementation:**
-- We use platforms like Supabase, PostgreSQL, or similar modern databases
-- All storage options include encryption at rest
-- Client controls data retention and deletion policies
-- We discuss storage options during the discovery phase
-
-### **Who can access the portal?**
-Access is controlled through Role-Based Access Control (RBAC):
-
-**Access Levels:**
-- **Admins:** Full access to all features, user management, system configuration
-- **Managers:** Access to reports, dashboards, workflow triggers, limited user management
-- **Viewers:** Read-only access to reports and dashboards
-- **Custom Roles:** Defined based on your business needs
-
-**Features:**
-- Admin controls who has access and what permissions they have
-- Optional Single Sign-On (SSO) integration
-- Multi-Factor Authentication (MFA) support
-- Complete audit logs showing who accessed what and when
-
-You define the roles and permissions based on your team structure and needs.
-
-### **Will AI replace my employees?**
-No.  
-AI at Xelar is designed to:
-- Reduce manual workload  
-- Speed up tasks  
-- Improve accuracy  
-- Support your staff  
-Not replace them.
-
----
-
-## PROCESS & SUPPORT
-
-### **Do you offer maintenance after implementation?**
-Yes — optional ongoing support packages are available for:
-- Monitoring automations and workflows
-- Fixing errors and issues
-- Adding new workflows and features
-- Expanding AI capabilities
-- Performance optimization
-- Security updates
-
-**Support Packages:**
-- Scope-based pricing (no fixed price)
-- Tailored to your specific needs
-- Can include monitoring, maintenance, and feature additions
-- Discussed during roadmap phase
-
-### **What does ongoing support look like?**
-Ongoing support can include:
-
-**Monitoring & Maintenance:**
-- System health monitoring
-- Workflow execution tracking
-- Error detection and resolution
-- Performance optimization
-
-**Enhancements:**
-- Adding new workflows
-- Expanding features
-- Integrating new data sources
-- Security updates
-
-**Support Levels:**
-- Full documentation & handover (you manage it)
-- Ongoing support retainer (we monitor and maintain)
-- Continuous expansion (we add features over time)
-
-Support packages are scope-based and customized to your needs.  
-
-### **Can you integrate everything into one system?**
-Yes — Xelar specializes in connecting multiple platforms so your business can operate smoothly end-to-end.
-
-### **Can you document the workflows?**
-Yes. Documentation includes:
-- Diagrams  
-- Step-by-step explanation  
-- Inputs/outputs  
-- Error handling rules  
-
-### **What if I don't know what I need?**
-That's normal.  
-The AI Strategy Call will help identify your best opportunities and easy wins.
-
----
-
-## FUTURE COLLABORATION
-
-### **Can we start small?**
-Absolutely. Many clients begin with a simple automation, see impact, and scale from there.
-
-### **Do you offer proof of concept (POC)?**
-Yes — for AI assistants, workflows, or dashboards.
-
-### **What do I need to prepare before working with Xelar?**
-Nothing complex.  
-Just bring:
-- Your business processes  
-- Your tools  
-- Your biggest problems  
-- Your goals  
-
-We translate the rest into technical solutions.
-
----
-
-### **How does pricing work?**
-**No fixed price** — all pricing is scope-based.
-
-**Pricing Process:**
-1. **Discovery Call** (free) - We understand your needs
-2. **Roadmap** - We create a detailed plan with estimates
-3. **Custom Quote** - Based on your specific requirements
-
-**What Affects Pricing:**
-- Type of automation or system
-- Tools and integrations involved
-- Number of workflows or pipelines
-- Complexity of processes
-- Security and compliance requirements
-- Whether you need portals, dashboards, or AI assistants
-
-**Pricing Includes:**
-- Implementation (one-time)
-- Optional ongoing support (monthly/quarterly)
-
-We provide transparent estimates after understanding your specific needs. No surprises—everything is discussed and agreed upon before starting.
-
----
-
-If a user asks a question not covered in this FAQ, the assistant should answer based on the core Xelar documents and business model.
+# AIXELAR FAQ
 
+This FAQ helps the chatbot answer common questions about AIXELAR, services, products, pricing, implementation, security, and process.
+
+## General Questions
+
+### What is AIXELAR?
+
+AIXELAR is an AI product studio and software engineering company. We design and build AI-powered apps, automation systems, dashboards, mobile apps, SaaS platforms, secure portals, and custom business software.
+
+We start by understanding how a business works, then build technology around its real workflows and bottlenecks.
+
+### What does AIXELAR build?
+
+AIXELAR builds:
+
+- AI-powered applications
+- Web applications
+- Mobile apps for iOS and Android
+- SaaS platforms
+- Internal business tools
+- AI agents and assistants
+- Workflow automation systems
+- Dashboards and analytics platforms
+- Data pipelines
+- Secure client portals
+- Cloud-native software
+- Enterprise platforms
+- API integrations
+
+### What makes AIXELAR different?
+
+AIXELAR does not start with a tool. We start with discovery.
+
+We learn the business, understand the team, map workflows, identify bottlenecks, and then design the right system. The goal is not to add AI for the sake of it. The goal is to build intelligent software that saves time, improves decisions, and scales with the business.
+
+### Do I need technical knowledge to work with AIXELAR?
+
+No. You only need to explain your business, current workflow, tools, and goals. AIXELAR handles the technical planning, architecture, build, testing, deployment, and support.
+
+### What industries does AIXELAR work with?
+
+AIXELAR can work with any business that has manual workflows, disconnected tools, data problems, reporting needs, or a product idea.
+
+Common examples include:
+
+- Retail and e-commerce
+- Car dealerships and automotive
+- Logistics and transportation
+- Healthcare operations
+- Agencies and consultancies
+- Real estate
+- Startups and product teams
+- Established businesses and enterprise teams
+
+## Services
+
+### Can AIXELAR build mobile apps?
+
+Yes. AIXELAR designs and develops native mobile apps, cross-platform mobile apps, SaaS mobile applications, and enterprise mobile solutions for startups, SMEs, and larger organizations.
+
+### Can AIXELAR build SaaS platforms?
+
+Yes. AIXELAR can design and build SaaS platforms including user accounts, dashboards, payments or subscriptions where needed, admin panels, backend systems, APIs, analytics, and AI features.
+
+### Can AIXELAR build AI agents?
+
+Yes. AIXELAR builds AI agents and assistants for customer support, internal knowledge search, document intelligence, lead qualification, reporting, workflow routing, and operational decision support.
+
+### Can AIXELAR automate business workflows?
+
+Yes. AIXELAR can automate workflows such as lead follow-up, reporting, inventory alerts, appointment reminders, document handling, onboarding, supplier communication, client reporting, and internal approvals.
+
+### Can AIXELAR build dashboards?
+
+Yes. AIXELAR builds business dashboards, executive dashboards, client dashboards, operational dashboards, and AI-powered reporting systems.
+
+### Can AIXELAR integrate with existing tools?
+
+Yes. AIXELAR can integrate with tools like CRMs, Shopify, WooCommerce, Stripe, Google Workspace, Microsoft tools, WhatsApp APIs, Slack, Teams, Supabase, PostgreSQL, BigQuery, Snowflake, Databricks, Power BI, Tableau, and any platform with APIs or webhooks.
+
+## Featured Products
+
+### What is Ginja?
+
+Ginja is an AI-powered productivity platform built by AIXELAR.
+
+Website: https://ginja.io
+
+Ginja helps people plan, collaborate, and grow through adaptive workflows. It includes AI planning, personalized goals, smart task management, shared planning through Circles, adaptive AI journeys, weekly AI reflections, and intelligent productivity.
+
+### Why did AIXELAR build Ginja?
+
+AIXELAR built Ginja because most productivity tools force people into rigid systems. Ginja is designed to adapt to how people think, plan, and show up in real life.
+
+The chatbot should mention that Ginja demonstrates AIXELAR's ability to build complete production-ready AI products, not just prototypes.
+
+### What is TervaTech?
+
+TervaTech is currently in development.
+
+Website: https://tervatech.com
+
+Always describe TervaTech as a defence intelligence platform. Use this approved description only.
+
+TervaTech is being built to improve operational awareness through intelligent field reporting, centralized data collection, AI-assisted analysis, and real-time operational visibility for defence and security organizations.
+
+The chatbot should say it is currently in development and should not imply that it is already deployed.
+
+## Process and Engagement
+
+### How does AIXELAR start a project?
+
+AIXELAR starts with discovery. We learn the business, workflows, tools, pain points, users, and goals before recommending a solution.
+
+### What is the AIXELAR process?
+
+The process is:
+
+1. Discovery - learn the business, workflows, pain points, and goals.
+2. Strategy - design the right technical solution.
+3. Build - develop secure, scalable, maintainable software.
+4. Launch - deploy, test, and support the system in production.
+5. Improve - optimize using real-world feedback and data.
+
+### What should a user prepare before a discovery call?
+
+They do not need anything complex. Helpful information includes:
+
+- What the business does
+- Current tools
+- Manual workflows
+- Pain points
+- Data sources
+- Desired outcomes
+- Who will use the system
+
+### Can we start small?
+
+Yes. Many projects start with one workflow, MVP, dashboard, or AI assistant. AIXELAR can help prove value first and expand over time.
+
+## Pricing and Timelines
+
+### How much does AIXELAR charge?
+
+Pricing is scope-based. There is no fixed price because each project depends on workflows, integrations, complexity, data sources, security requirements, and support needs.
+
+### Can AIXELAR provide an estimate?
+
+Yes, after discovery. AIXELAR needs to understand the business, tools, workflows, and goals before giving a realistic estimate.
+
+### How long does a project take?
+
+Typical ranges:
+
+- Small automation: 1-5 days
+- Medium automation: 1-2 weeks
+- AI assistant or chatbot: 1-3 weeks
+- Dashboard or data pipeline: 2-8 weeks
+- Secure portal MVP: 2-6 weeks
+- Full product or platform rollout: 6-12+ weeks
+
+The chatbot should avoid promising exact timelines before discovery.
+
+### Is the discovery call free?
+
+The current discovery or roadmap call is free. It helps AIXELAR understand the business and recommend realistic next steps.
+
+## Security and Data
+
+### Is business data safe with AIXELAR?
+
+AIXELAR designs systems with security in mind. Depending on the project, this can include encrypted data in transit, encrypted storage, secure API connections, credential management, role-based access control, optional SSO and MFA, audit logs, and client-controlled data retention.
+
+### Can AIXELAR build a secure portal?
+
+Yes. AIXELAR can build secure portals with login, role-based access, dashboards, report downloads, workflow triggers, approval flows, alerts, and audit logs.
+
+### Where is data stored?
+
+Storage depends on the project. Options can include the client's own environment, secure hosted storage, or a hybrid approach. Storage decisions are discussed during discovery.
+
+### Does AIXELAR train models on client data?
+
+AIXELAR does not resell or reuse client data. For most business projects, AIXELAR builds systems using secure integrations, retrieval, workflow logic, and model APIs rather than training large foundation models from scratch.
+
+## Comparing AIXELAR With Generic AI Tools
+
+### Why not just use ChatGPT, Claude, or Perplexity?
+
+Those tools are useful for one-off questions and analysis. AIXELAR builds always-connected business systems.
+
+The difference:
+
+- Generic tools answer prompts.
+- AIXELAR builds repeatable workflows.
+- Generic tools require manual uploads.
+- AIXELAR can connect to live data sources.
+- Generic tools are usually single-user.
+- AIXELAR can build access control, dashboards, audit logs, and team workflows.
+
+Use generic AI tools for quick questions. Use AIXELAR when the business needs a reliable system that runs repeatedly, integrates with existing tools, and supports real operations.
+
+## How the Chatbot Should Respond
+
+The chatbot should be consultative, not salesy.
+
+If a user asks "What can AIXELAR build?", do not only list services. Ask about the business and then recommend.
+
+Good follow-up questions:
+
+- "What industry are you in?"
+- "Which workflow would you most like to improve?"
+- "What tools does your team currently use?"
+- "Is this for customers, internal teams, or leadership reporting?"
+- "Are you trying to save time, improve visibility, reduce errors, or launch a new product?"
+
+Responses should be professional, modern, helpful, confident, and friendly. Avoid generic marketing language and avoid overselling.

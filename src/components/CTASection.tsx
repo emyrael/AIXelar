@@ -3,7 +3,7 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-24 bg-primary relative overflow-hidden">
+    <section className="py-14 bg-primary relative overflow-hidden md:py-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 node-bg opacity-10" />
       
@@ -11,12 +11,12 @@ const CTASection = () => {
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl -translate-y-1/2" />
       <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl -translate-y-1/2" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-5 relative z-10 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-primary-foreground mb-4 md:mb-6">
             Ready to Transform Your Business with Xelar?
           </h2>
-          <p className="text-lg text-primary-foreground/70 mb-10">
+          <p className="text-base text-primary-foreground/70 mb-7 md:text-lg md:mb-10">
             Book a free consultation call. We'll discuss your challenges and show you exactly how AI can help.
           </p>
 

@@ -51,23 +51,23 @@ const HeroSection = () => {
       <div className="absolute right-8 bottom-28 hidden h-56 w-px bg-gradient-to-b from-transparent via-primary/20 to-transparent md:block animate-scan-y-delayed" />
 
       {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="container mx-auto px-5 pt-28 pb-12 relative z-10 sm:px-6 md:pt-32 md:pb-20">
+        <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
           <div className="max-w-4xl text-center lg:text-left">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-5 animate-fade-up">
+          <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-accent/10 border border-accent/20 mb-4 animate-fade-up sm:px-4 md:mb-5">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-accent">AI PRODUCT STUDIO • AUTOMATION • DATA INTELLIGENCE</span>
+            <span className="text-xs font-medium text-accent sm:text-sm">AI PRODUCT STUDIO • AUTOMATION • DATA INTELLIGENCE</span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight animate-fade-up">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight animate-fade-up md:mb-6">
             Intelligent Software for Businesses Ready to{" "}
             <span className="gradient-text">Move Faster</span>
           </h1>
 
           {/* Subtext */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up-delayed lg:mx-0">
+          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-7 leading-relaxed animate-fade-up-delayed lg:mx-0 md:mb-10">
             AIXELAR designs and builds AI-powered apps, automation systems, dashboards, and business platforms. We start by learning how your company works, then turn your workflows into intelligent software that saves time, improves decisions, and scales with you.
           </p>
 
@@ -85,11 +85,11 @@ const HeroSection = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-14 border-t border-border/50 pt-8">
-            <p className="text-sm text-muted-foreground mb-5">Built for companies that need practical intelligence, not generic software.</p>
-            <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+          <div className="mt-8 border-t border-border/50 pt-5 md:mt-14 md:pt-8">
+            <p className="text-sm text-muted-foreground mb-4 md:mb-5">Built for companies that need practical intelligence, not generic software.</p>
+            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-3 lg:justify-start">
               {proofItems.map((item) => (
-                <span key={item} className="rounded-full border border-border/70 bg-card/70 px-4 py-2 text-sm font-semibold text-muted-foreground shadow-soft backdrop-blur">
+                <span key={item} className="rounded-full border border-border/70 bg-card/70 px-3 py-2 text-center text-xs font-semibold text-muted-foreground shadow-soft backdrop-blur sm:px-4 sm:text-sm">
                   {item}
                 </span>
               ))}
@@ -99,27 +99,27 @@ const HeroSection = () => {
 
           {/* Product Mockup */}
           <div className="relative mx-auto w-full max-w-xl animate-fade-up-delayed">
-            <div className="hero-interface-card rounded-2xl bg-card/80 p-4 shadow-glow backdrop-blur-xl">
-              <div className="hero-interface-surface rounded-xl border border-border/60 bg-gradient-to-br from-background via-card to-secondary/50 p-5">
-                <div className="mb-5 flex items-center justify-between">
+            <div className="hero-interface-card rounded-2xl bg-card/80 p-3 shadow-glow backdrop-blur-xl sm:p-4">
+              <div className="hero-interface-surface rounded-xl border border-border/60 bg-gradient-to-br from-background via-card to-secondary/50 p-4 sm:p-5">
+                <div className="mb-4 flex items-center justify-between gap-3 sm:mb-5">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-accent">Intelligent Operations Layer</p>
-                    <h2 className="mt-1 text-xl font-bold text-foreground">From discovery to deployed AI systems</h2>
+                    <h2 className="mt-1 text-lg font-bold text-foreground sm:text-xl">From discovery to deployed AI systems</h2>
                   </div>
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10">
                     <Layers3 className="h-5 w-5 text-accent" />
                   </div>
                 </div>
 
-                <div className="relative space-y-3">
+                <div className="relative space-y-2.5 sm:space-y-3">
                   <div className="hero-data-flow" aria-hidden="true" />
                   {signalCards.map((card, index) => (
                     <div
                       key={card.label}
-                      className="hero-interface-row group flex items-center gap-4 rounded-xl border border-border/60 bg-background/70 p-4 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:bg-card hover:shadow-card"
+                      className="hero-interface-row group flex items-center gap-3 rounded-xl border border-border/60 bg-background/70 p-3 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:bg-card hover:shadow-card sm:gap-4 sm:p-4"
                       style={{ animationDelay: `${index * 120}ms` }}
                     >
-                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground transition-colors group-hover:bg-accent group-hover:text-accent-foreground sm:h-11 sm:w-11">
                         <card.icon className="h-5 w-5" />
                       </div>
                       <div className="min-w-0 flex-1">
@@ -131,20 +131,20 @@ const HeroSection = () => {
                   ))}
                 </div>
 
-                <div className="mt-5 grid grid-cols-3 gap-3">
+                <div className="mt-4 grid grid-cols-3 gap-2 sm:mt-5 sm:gap-3">
                   {["Discover", "Design", "Deploy"].map((item) => (
-                    <div key={item} className="rounded-lg border border-border/60 bg-card p-3 text-center text-sm font-semibold text-muted-foreground">
+                    <div key={item} className="rounded-lg border border-border/60 bg-card p-2 text-center text-xs font-semibold text-muted-foreground sm:p-3 sm:text-sm">
                       {item}
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-4 flex items-center justify-between gap-3 rounded-lg border border-accent/20 bg-accent/5 px-4 py-3">
+                <div className="mt-3 flex items-center justify-between gap-3 rounded-lg border border-accent/20 bg-accent/5 px-3 py-2.5 sm:mt-4 sm:px-4 sm:py-3">
                   <div className="flex items-center gap-2">
                     <DatabaseZap className="h-4 w-4 text-accent" />
                     <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Build signal</span>
                   </div>
-                  <div className="hero-metric-cycle relative h-5 min-w-32 overflow-hidden text-right text-sm font-semibold text-foreground">
+                  <div className="hero-metric-cycle relative h-5 min-w-28 overflow-hidden text-right text-xs font-semibold text-foreground sm:min-w-32 sm:text-sm">
                     {metricItems.map((item, index) => (
                       <span key={item} style={{ animationDelay: `${index * 2.4}s` }}>
                         {item}
@@ -159,7 +159,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-bounce md:block">
         <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex items-start justify-center p-2">
           <div className="w-1.5 h-3 bg-accent rounded-full animate-pulse" />
         </div>

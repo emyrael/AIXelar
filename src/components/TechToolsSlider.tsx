@@ -44,14 +44,14 @@ const TechToolsSlider = () => {
   const duplicatedTools = [...techTools, ...techTools];
 
   return (
-    <section className="py-16 bg-secondary/20 overflow-hidden">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
+    <section className="py-10 bg-secondary/20 overflow-hidden md:py-16">
+      <div className="container mx-auto px-5 sm:px-6">
+        <div className="text-center mb-7 md:mb-12">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Integrations</span>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-4 mb-3">
+          <h2 className="text-xl md:text-3xl font-bold text-foreground mt-3 mb-2 md:mt-4 md:mb-3">
             Works with Your Existing Tools
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto md:text-base">
             We integrate AI with the tools you already use, so you don't have to change your workflow
           </p>
         </div>
@@ -59,8 +59,8 @@ const TechToolsSlider = () => {
         {/* Infinite Scrolling Slider */}
         <div className="relative">
           {/* Gradient overlays for fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background via-background/80 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background via-background/80 to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background via-background/80 to-transparent z-10 pointer-events-none md:w-32" />
+          <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background via-background/80 to-transparent z-10 pointer-events-none md:w-32" />
 
           {/* Slider Container */}
           <div className="overflow-hidden">
@@ -70,12 +70,12 @@ const TechToolsSlider = () => {
                 return (
                   <div
                     key={`${tool.name}-${index}`}
-                    className="flex-shrink-0 mx-4 flex flex-col items-center justify-center p-6 rounded-xl bg-card border border-border/50 hover:border-accent/50 transition-all duration-300 group min-w-[160px]"
+                    className="flex-shrink-0 mx-2 flex min-w-[118px] flex-col items-center justify-center rounded-xl border border-border/50 bg-card p-4 transition-all duration-300 group hover:border-accent/50 md:mx-4 md:min-w-[160px] md:p-6"
                   >
-                    <div className={`w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-3 group-hover:bg-accent/20 transition-colors ${tool.color}`}>
-                      <IconComponent className="w-6 h-6" />
+                    <div className={`w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-2 group-hover:bg-accent/20 transition-colors md:w-12 md:h-12 md:mb-3 ${tool.color}`}>
+                      <IconComponent className="w-5 h-5 md:w-6 md:h-6" />
                     </div>
-                    <span className="text-sm font-medium text-foreground text-center">{tool.name}</span>
+                    <span className="text-xs font-medium text-foreground text-center md:text-sm">{tool.name}</span>
                   </div>
                 );
               })}
@@ -89,4 +89,3 @@ const TechToolsSlider = () => {
 };
 
 export default TechToolsSlider;
-

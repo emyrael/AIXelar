@@ -69,8 +69,8 @@ const ContactSection = () => {
 
   if (isSubmitted) {
     return (
-      <section id="contact" className="py-24">
-        <div className="container mx-auto px-6">
+      <section id="contact" className="py-14 md:py-24">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <div className="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="w-10 h-10 text-accent" />
@@ -88,16 +88,16 @@ const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="py-24">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+    <section id="contact" className="py-14 md:py-24">
+      <div className="container mx-auto px-5 sm:px-6">
+        <div className="max-w-3xl mx-auto text-center mb-8 md:mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">
             Get In Touch
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-foreground mt-3 mb-4 md:mt-4 md:mb-6">
             Let's Build Your AI Solution
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base text-muted-foreground md:text-lg">
             Tell us about your project and we'll get back to you with a custom proposal.
           </p>
           <p className="text-sm text-muted-foreground mt-2">
@@ -109,8 +109,8 @@ const ContactSection = () => {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+            <div className="grid gap-4 sm:grid-cols-2 md:gap-6">
               <div className="space-y-2">
                 <label
                   htmlFor="fullName"
@@ -181,7 +181,7 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="bg-card border-border/50 focus:border-accent resize-none"
+                className="bg-card border-border/50 focus:border-accent resize-none min-h-[120px] md:min-h-[160px]"
               />
             </div>
 

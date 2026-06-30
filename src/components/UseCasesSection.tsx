@@ -29,36 +29,36 @@ const useCases = [
 
 const UseCasesSection = () => {
   return (
-    <section className="py-24">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+    <section className="py-14 md:py-24">
+      <div className="container mx-auto px-5 sm:px-6">
+        <div className="max-w-3xl mx-auto text-center mb-8 md:mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Use Cases</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-foreground mt-3 mb-4 md:mt-4 md:mb-6">
             Real Results for Real Businesses
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base text-muted-foreground md:text-lg">
             See how we've transformed operations across industries.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 gap-3 max-w-5xl mx-auto md:gap-6">
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className="group relative p-8 rounded-2xl bg-card border border-border/50 card-hover cursor-pointer"
+              className="group relative rounded-2xl bg-card border border-border/50 p-3 card-hover cursor-pointer sm:p-5 md:p-8"
             >
-              <div className="flex items-start justify-between mb-4">
-                <span className="px-3 py-1 text-xs font-semibold bg-accent/10 text-accent rounded-full">
+              <div className="flex items-start justify-between gap-2 mb-2 sm:mb-3 md:mb-4">
+                <span className="px-2 py-1 text-[10px] font-semibold bg-accent/10 text-accent rounded-full sm:text-xs sm:px-2.5">
                   {useCase.industry}
                 </span>
-                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                <ArrowUpRight className="w-4 h-4 shrink-0 text-muted-foreground group-hover:text-accent transition-colors sm:w-5 sm:h-5" />
               </div>
               
-              <h3 className="text-xl font-bold text-foreground mb-3">{useCase.title}</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">{useCase.description}</p>
+              <h3 className="text-sm font-bold text-foreground mb-2 sm:text-lg md:text-xl md:mb-3">{useCase.title}</h3>
+              <p className="text-xs text-muted-foreground mb-3 leading-relaxed line-clamp-5 sm:text-sm sm:mb-4 sm:line-clamp-none md:text-base md:mb-6">{useCase.description}</p>
               
-              <div className="pt-4 border-t border-border/50">
-                <span className="text-2xl font-bold text-accent">{useCase.metric}</span>
+              <div className="pt-2 border-t border-border/50 sm:pt-3 md:pt-4">
+                <span className="text-sm font-bold text-accent sm:text-xl md:text-2xl">{useCase.metric}</span>
               </div>
             </div>
           ))}

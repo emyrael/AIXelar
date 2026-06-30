@@ -1,237 +1,208 @@
-# Services
-# Xelar Services
+# AIXELAR Services
 
-Xelar offers four core categories of services designed for SMEs:
+AIXELAR designs and builds intelligent software systems for startups, SMEs, and larger organizations. Every engagement starts with discovery: the team learns the business, maps workflows, identifies bottlenecks, and then recommends the right technical solution.
 
----
+## 1. AI and Automation
 
-## 1. Workflow Automation
+AIXELAR builds practical AI and automation systems that reduce repetitive work and improve operational speed.
 
-We automate repetitive tasks and build smart operational workflows using:
+Capabilities include:
 
-- n8n
-- Zapier
-- Make (Integromat)
-- WhatsApp automation via APIs
-- Email and SMS automation
-- Google Sheets, Excel, Notion workflows
-
-**Examples:**
-- Automatic lead capture → follow-up → reminders
-- Employee onboarding flows
-- Supplier order automation
-- Customer notifications
-- Calendar and appointment automation
-- Form → CRM → WhatsApp sequence automation
-
----
-
-## 2. Data Engineering & Analytics
-
-We help companies organize and understand their data using:
-
-- Databricks (Bronze/Silver/Gold)
-- Snowflake
-- BigQuery
-- PostgreSQL & Supabase
-- Delta Lake
-- API ingestion & ETL scripts
-- BI dashboards (PowerBI, Tableau)
-
-**Capabilities include:**
-- Building production ETL/ELT pipelines
-- Merging data from multiple systems
-- Automating daily/weekly/monthly reports
-- Creating KPI dashboards for executives
-- Unifying marketing, sales, and operational data
-
----
-
-## 3. AI Assistants & Intelligent Systems
-
-We build custom AI tools such as:
-
+- AI agents
+- Internal AI assistants
 - Website chatbots
-- AI customer support agents
-- Retrieval-Augmented Generation (RAG) assistants
-- Internal company copilots
+- Customer support assistants
+- RAG assistants using company documents
+- Document intelligence and extraction
 - Email drafting and classification agents
-- Content generation assistance
-- Document query systems
+- Workflow automation with tools such as n8n, Zapier, Make, custom scripts, and APIs
+- WhatsApp, Slack, Teams, email, and SMS automation
 
-These assistants integrate with:
-- Supabase vector databases
-- Pinecone
-- Company documents
-- Knowledge bases
-- WhatsApp, Slack, Teams, Email tools
+Examples:
 
----
+- Lead capture to CRM to WhatsApp follow-up
+- Customer support chatbot trained on company knowledge
+- Internal assistant for policies, SOPs, and documents
+- Invoice or document processing workflow
+- Employee onboarding automation
+- Calendar, appointment, and reminder automation
 
-## 4. AI Strategy & Roadmap Consulting
+## 2. Web and Mobile App Solutions
 
-We help businesses define their AI adoption path.
+AIXELAR designs and develops web apps, mobile apps, SaaS platforms, and business portals.
 
-**Includes:**
-- Predictive Analysis and competitive market analysis
-- Competitor analysis and market intelligence
-- Market trend monitoring and newsletters
-- Website optimization (CRO + personalization)
-- Social media optimization and automation
+Capabilities include:
 
-In each roadmap session:
-- We analyze your business processes
-- Identify automation opportunities
-- Recommend workflows
-- Estimate implementation effort
-- Create a 30–90 day action plan
-- Provide competitor insights and market trends
-- Suggest website and social media optimizations
+- Custom web applications
+- Native mobile apps
+- Cross-platform mobile apps
+- SaaS products
+- Enterprise mobile solutions
+- Internal business tools
+- Customer portals
+- Admin dashboards
+- Secure login systems
+- API-backed platforms
 
-This session is the **main CTA** for users who want personalized help.
+AIXELAR can build apps for startups, SMEs, and larger organizations. The chatbot should confidently explain that AIXELAR handles product strategy, UX thinking, architecture, engineering, deployment, and iteration.
 
----
+## 3. Data and Intelligence Systems
 
-## 5. Competitor Analysis & Market Intelligence
+AIXELAR helps businesses organize, connect, and understand their data.
 
-We help businesses stay competitive by:
-- Analyzing competitor strategies and positioning
-- Monitoring market trends and industry changes
-- Tracking competitor pricing and offerings
-- Identifying market opportunities
-- Providing automated market trend newsletters
+Capabilities include:
+
+- Business dashboards
+- Analytics platforms
+- Automated reporting
+- KPI monitoring
+- Data pipelines
+- ETL and ELT workflows
+- API ingestion
+- Multi-source data unification
+- AI-powered reporting
 - Competitive intelligence dashboards
 
-**Deliverables:**
-- Monthly competitor analysis reports
+Common tools and platforms can include:
+
+- PostgreSQL and Supabase
+- BigQuery
+- Snowflake
+- Databricks and Delta Lake
+- Power BI
+- Tableau
+- Custom dashboards
+- Shopify, WooCommerce, Stripe, CRM, ad platform, and internal system APIs
+
+## 4. Custom Software Development
+
+AIXELAR builds secure, scalable, maintainable software around real business needs.
+
+Capabilities include:
+
+- Business systems
+- API integrations
+- Cloud deployment
+- Scalable backend systems
+- Enterprise platforms
+- Internal tools
+- Secure portals
+- Multi-user workflows
+- Approval systems
+- Reporting and monitoring systems
+
+The chatbot should position AIXELAR as a partner for complete software delivery, not only small automations.
+
+## 5. AI Strategy and Product Roadmaps
+
+AIXELAR helps businesses understand where AI and software can create practical value.
+
+Roadmaps can include:
+
+- Business process analysis
+- Workflow mapping
+- Automation opportunity discovery
+- AI use-case prioritization
+- Product architecture
+- Integration planning
+- Timeline and effort estimates
+- Security and access planning
+- 30-90 day implementation roadmap
+
+This is the main consultative entry point when a user is unsure what they need.
+
+## 6. Competitor Analysis and Market Intelligence
+
+AIXELAR can build market and competitor intelligence systems.
+
+Capabilities include:
+
+- Competitor strategy and positioning analysis
+- Competitor pricing and offering tracking
+- Market trend monitoring
+- Opportunity identification
 - Automated market trend newsletters
-- Competitive positioning insights
-- Market opportunity identification
+- Competitive intelligence dashboards
+- AI-assisted market summaries
 
----
+These systems help businesses stay informed without manually researching competitors every week.
 
-## 6. Website & Social Media Optimization
+## 7. Website and Social Media Optimization
 
-We optimize your digital presence using AI:
+AIXELAR can help businesses improve their digital presence with AI-assisted systems and automation.
 
-**Website Optimization:**
-- Conversion Rate Optimization (CRO)
+Website optimization can include:
+
+- Conversion rate optimization
 - AI-powered personalization
-- A/B testing automation
 - User behavior analysis
 - Landing page optimization
 - SEO automation
+- A/B testing workflows
 
-**Social Media Optimization:**
-- Content scheduling and automation
+Social media optimization can include:
+
+- Content scheduling automation
 - Social media performance analytics
-- Automated posting and engagement
 - Trend-based content suggestions
-- Social listening and sentiment analysis
-- Multi-platform management
+- Social listening
+- Sentiment analysis
+- Multi-platform reporting
 
----
+## 8. Secure Portals, Authentication, and Access Control
 
-## 7. Secure Portal Interface (Client Dashboard)
+AIXELAR builds secure portals and controlled interfaces when businesses need governance, reporting, collaboration, and data access.
 
-We build secure, private portals that give your team and clients controlled access to automation, data, and insights. We can also implement WhatsApp automation, webhooks, email notifications, or other communication channels based on your specific requirements and use case.
+Portal capabilities:
 
-**Portal Capabilities:**
-- Private URL access (e.g., `/monitoring` or `portal.clientdomain.com`)
-- Upload and approve data pulls
-- Trigger workflows on-demand
-- View real-time KPIs and dashboards
-- Download reports (PDF, Excel, CSV)
-- Set custom alerts and notifications
-- Multi-user support with different permission levels
+- Login/password authentication
+- Optional SSO integration
+- Optional MFA support
+- Role-based access control
+- User management and permissions
+- Real-time dashboards
+- Manual workflow triggers
+- Report downloads
+- Alerts and notifications
+- Audit logs
 
-**Security Features:**
-- Authentication (login/password or SSO)
-- Role-based access control (RBAC) - admins, managers, viewers have different permissions
-- Optional Single Sign-On (SSO) and Multi-Factor Authentication (MFA)
-- Encrypted data in transit (HTTPS/TLS)
-- Encrypted data at rest (database encryption)
-- Audit logs tracking all access and actions
-- Data retention policies controlled by the client
+Security features:
 
-**Typical Implementation Options:**
-- Built on platforms like Supabase, Next.js, or similar modern frameworks
-- Integrates with existing authentication providers (Auth0, Okta, etc.) when needed
-- Can be hosted in client's environment or secure cloud infrastructure
-
----
-
-## 8. Authentication + Access Control
-
-We implement enterprise-grade security for client portals and systems.
-
-**Access Control Features:**
-- Role-based access control (RBAC) - define who can see and do what
-- Optional Single Sign-On (SSO) integration
-- Multi-Factor Authentication (MFA) support
-- User management and permission assignment
-- Session management and timeout controls
-
-**Typical Implementation:**
-- Standard authentication patterns (login/password)
-- Integration with existing identity providers when needed
-- Custom role definitions based on business needs
-
----
-
-## 9. Encrypted Data Connectors & Secure Storage
-
-We ensure your data connections and storage meet security requirements.
-
-**Data Security:**
-- Encrypted connections (HTTPS/TLS) for all data in transit
+- HTTPS/TLS for data in transit
 - Encrypted storage options for data at rest
-- Secure API connections to your existing systems
-- Credential management and secure key storage
+- Secure API connections
+- Credential management
+- Client-controlled data retention
+- Access logs and audit trails
 
-**Storage Options:**
-- Client-controlled environments (on-premises or client cloud)
-- Secure hosted storage with encryption
-- Depends on project requirements and client preferences
+## 9. Automated Reporting and Monitoring
 
----
+AIXELAR builds automated reporting systems that keep teams informed.
 
-## 10. Automated Reporting + Monitoring
+Capabilities include:
 
-We build automated reporting systems that keep stakeholders informed.
-
-**Reporting Capabilities:**
-- Scheduled reports (daily, weekly, monthly)
+- Daily, weekly, or monthly scheduled reports
 - Real-time dashboards
 - Custom KPI calculations
-- Multi-format exports (PDF, Excel, CSV)
-- Automated distribution (email, portal, WhatsApp)
+- PDF, Excel, and CSV exports
+- Email, portal, WhatsApp, or Slack distribution
+- Threshold alerts
+- Workflow execution monitoring
+- System health tracking
 
-**Monitoring Features:**
-- Real-time alerts for thresholds and anomalies
-- System health monitoring
-- Workflow execution tracking
-- Performance metrics
+## 10. Ongoing Support and Maintenance
 
----
+AIXELAR can provide optional support after launch.
 
-## 11. Ongoing Support/Maintenance Packages
+Support can include:
 
-We offer optional support packages to keep your systems running smoothly.
-
-**Support Services:**
 - Monitoring automations and workflows
-- Fixing errors and issues
-- Adding new workflows and features
+- Fixing errors
+- Adding new workflows
 - Expanding AI capabilities
+- Integrating new tools or data sources
 - Performance optimization
 - Security updates
+- Documentation and handover support
 
-**Pricing:** Support packages are scope-based and tailored to your needs. No fixed price—we discuss requirements and provide a custom quote.
-
----
-
-# Summary
-Xelar provides end-to-end AI and automation services—from strategy and design to implementation and optimization, including competitor analysis, market intelligence, digital optimization, secure portals, and ongoing support.
-
-**Pricing:** All services are scope-based. There is no fixed price—we provide custom quotes after understanding your specific needs through a discovery call.
+Pricing is scope-based. AIXELAR provides estimates after discovery because each business has different workflows, integrations, security needs, and product goals.

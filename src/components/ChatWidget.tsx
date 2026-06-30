@@ -93,7 +93,7 @@ const ChatWidget = () => {
     problem: "",
   });
   const [collectingInfo, setCollectingInfo] = useState(false);
-  const [knowledgeBase, setKnowledgeBase] = useState<any>(null);
+  const [knowledgeBase, setKnowledgeBase] = useState<unknown>(null);
   const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -535,4 +535,3 @@ const ChatWidget = () => {
 };
 
 export default ChatWidget;
-

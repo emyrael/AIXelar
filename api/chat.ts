@@ -80,12 +80,12 @@ export default async function handler(
       response: aiResponse,
     });
 
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error in chat API:', error);
+    const message = error instanceof Error ? error.message : 'Failed to generate response';
     return response.status(500).json({ 
       error: 'Internal server error',
-      message: error.message || 'Failed to generate response'
+      message
     });
   }
 }
-
